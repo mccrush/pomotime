@@ -14,12 +14,14 @@
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         Dim minuts, seconds As Integer
+        Dim nullSec As String
         pomoTime = pomoTime - 1
 
         minuts = Int(pomoTime / 60)
-        seconds = If(pomoTime Mod 60 > 10, pomoTime Mod 60, "0" & pomoTime Mod 60)
+        seconds = pomoTime Mod 60
+        nullSec = If(pomoTime Mod 60 >= 10, "", "0")
 
-        Label1.Text = minuts & ":" & seconds
+        Label1.Text = minuts & ":" & nullSec & seconds
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
