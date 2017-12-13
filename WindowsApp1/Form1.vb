@@ -3,9 +3,11 @@
     Public pomoTime As Single
     Public shortPause As Single
     Public longPause As Single
+    Public statusShow As Boolean = True
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Timer1.Start()
+        NotifyIcon1.BalloonTipText = "Time is start"
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -24,7 +26,10 @@
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Me.Visible = False
+
+
+
+        ' Me.Visible = False
         pomoTime = My.Settings.tp * 60
     End Sub
 
@@ -37,7 +42,15 @@
         Form2.Show()
     End Sub
 
-    Private Sub NotifyIcon1_Click(sender As Object, e As MouseEventArgs) Handles NotifyIcon1.MouseDoubleClick
-        Me.Show()
+    Private Sub NotifyIcon1_MouseClick(sender As Object, e As MouseEventArgs) Handles NotifyIcon1.MouseClick
+        If (e.Button = MouseButtons.Left) Then
+            If (statusShow) Then
+                Me.Hide()
+                statusShow = False
+            Else
+                Me.Show()
+                statusShow = True
+            End If
+        End If
     End Sub
 End Class

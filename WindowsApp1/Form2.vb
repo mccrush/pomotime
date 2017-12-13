@@ -18,5 +18,6 @@
         If (My.Settings.sn) Then
             CheckBox1.Checked = True
         End If
+
     End Sub
 End Class
