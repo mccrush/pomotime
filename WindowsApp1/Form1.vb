@@ -16,7 +16,6 @@
         Dim minuts, seconds As Integer
         Dim nullSec As String
         pomoTime = pomoTime - 1
-
         minuts = Int(pomoTime / 60)
         seconds = pomoTime Mod 60
         nullSec = If(pomoTime Mod 60 >= 10, "", "0")
