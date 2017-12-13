@@ -7,7 +7,9 @@
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Timer1.Start()
+        NotifyIcon1.BalloonTipTitle = "Title message"
         NotifyIcon1.BalloonTipText = "Time is start"
+        NotifyIcon1.BalloonTipIcon = ToolTipIcon.Info
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -26,10 +28,6 @@
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-
-
-        ' Me.Visible = False
         pomoTime = My.Settings.tp * 60
     End Sub
 
@@ -52,5 +50,10 @@
                 statusShow = True
             End If
         End If
+    End Sub
+
+    Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
+        AboutBox1.Show()
+
     End Sub
 End Class
