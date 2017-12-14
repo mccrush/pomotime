@@ -111,18 +111,18 @@ Partial Class Form2
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(14, 123)
+        Me.Button1.Location = New System.Drawing.Point(15, 123)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(80, 23)
         Me.Button1.TabIndex = 11
         Me.Button1.Text = "Cancel"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(95, 123)
+        Me.Button2.Location = New System.Drawing.Point(101, 123)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(86, 23)
+        Me.Button2.Size = New System.Drawing.Size(80, 23)
         Me.Button2.TabIndex = 12
         Me.Button2.Text = "Save and Q"
         Me.Button2.UseVisualStyleBackColor = True
