@@ -4,13 +4,10 @@
     Public shortPause As Single
     Public longPause As Single
     Public statusShow As Boolean = True
-
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Timer1.Start()
         Button1.Hide()
         Button2.Show()
-        NotifyIcon1.BalloonTipTitle = "Title message"
-        NotifyIcon1.BalloonTipText = "Time is start"
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -60,6 +57,7 @@
                 Me.Hide()
                 statusShow = False
             Else
+                'Me.ShowDialog()
                 Me.Show()
                 statusShow = True
             End If
@@ -68,6 +66,13 @@
 
     Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
         AboutBox1.Show()
+    End Sub
 
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+
+    End Sub
+
+    Private Sub BackgroundWorker1_DoWork(sender As Object, e As System.ComponentModel.DoWorkEventArgs)
+        Label3.Text = "pizdec"
     End Sub
 End Class
