@@ -57,36 +57,36 @@ Namespace My
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("25")>  _
-        Public Property tp() As Integer
+        Public Property pt() As Integer
             Get
-                Return CType(Me("tp"),Integer)
+                Return CType(Me("pt"),Integer)
             End Get
             Set
-                Me("tp") = value
+                Me("pt") = value
             End Set
         End Property
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("5")>  _
-        Public Property sp() As Integer
+        Public Property st() As Integer
             Get
-                Return CType(Me("sp"),Integer)
+                Return CType(Me("st"),Integer)
             End Get
             Set
-                Me("sp") = value
+                Me("st") = value
             End Set
         End Property
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("15")>  _
-        Public Property lp() As Integer
+        Public Property lt() As Integer
             Get
-                Return CType(Me("lp"),Integer)
+                Return CType(Me("lt"),Integer)
             End Get
             Set
-                Me("lp") = value
+                Me("lt") = value
             End Set
         End Property
         
