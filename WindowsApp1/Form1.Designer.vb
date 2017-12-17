@@ -44,7 +44,9 @@ Partial Class Form1
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
+        Me.EventLog1 = New System.Diagnostics.EventLog()
         Me.ContextMenuStrip1.SuspendLayout()
+        CType(Me.EventLog1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
@@ -226,12 +228,16 @@ Partial Class Form1
         Me.Label10.TabIndex = 14
         Me.Label10.Text = "Label10"
         '
+        'EventLog1
+        '
+        Me.EventLog1.SynchronizingObject = Me
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
-        Me.ClientSize = New System.Drawing.Size(339, 205)
+        Me.ClientSize = New System.Drawing.Size(335, 249)
         Me.ControlBox = False
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
@@ -260,6 +266,7 @@ Partial Class Form1
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.TopMost = True
         Me.ContextMenuStrip1.ResumeLayout(False)
+        CType(Me.EventLog1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -285,4 +292,5 @@ Partial Class Form1
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
+    Friend WithEvents EventLog1 As EventLog
 End Class

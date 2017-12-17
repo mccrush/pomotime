@@ -33,7 +33,7 @@
                 tecTime = shortBreakTime
             Case 3
                 longBreakTime = longBreakTime - 1
-                tecTime = shortBreakTime
+                tecTime = longBreakTime
             Case Else
                 pomoTime = pomoTime - 1
                 tecTime = pomoTime
@@ -48,23 +48,29 @@
             shortBreakTime = My.Settings.st * 60
             longBreakTime = My.Settings.lt * 60
 
+
+
+
             If (typeTime = 1) Then
+                Timer1.Stop()
                 Button2.Hide()
                 Label2.Hide()
                 Label3.Hide()
 
-                Label3.Show()
+                Label4.Show()
                 Button3.Show()
                 Button4.Show()
             Else
+                Timer1.Stop()
                 Button2.Hide()
-                Label5.Hide()
                 Label3.Hide()
+                Label5.Hide()
 
                 Label1.Show()
+                Button1.Text = "Start pomo time"
                 Button1.Show()
             End If
-            Timer1.Stop()
+
         Else
             minuts = Int(tecTime / 60) + 1
             seconds = tecTime Mod 60
@@ -129,7 +135,10 @@
     End Sub
 
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Me.Hide()
+        statusFormView = False
+
         typeTime = 3
         Timer1.Start()
         Button3.Hide()
