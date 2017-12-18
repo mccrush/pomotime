@@ -159,6 +159,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="pomotime.ico" />
+    <None Include="Resources\abstract-1780285_640.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">

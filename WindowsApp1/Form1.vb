@@ -43,27 +43,23 @@
             Me.Show()
             statusFormView = True
 
-
             pomoTime = My.Settings.pt * 60
             shortBreakTime = My.Settings.st * 60
             longBreakTime = My.Settings.lt * 60
 
+            My.Computer.Audio.Play("C:\elegant_ringtone.wav", AudioPlayMode.BackgroundLoop)
 
-
+            Timer1.Stop()
+            Button2.Hide()
+            Label3.Hide()
 
             If (typeTime = 1) Then
-                Timer1.Stop()
-                Button2.Hide()
                 Label2.Hide()
-                Label3.Hide()
 
                 Label4.Show()
                 Button3.Show()
                 Button4.Show()
             Else
-                Timer1.Stop()
-                Button2.Hide()
-                Label3.Hide()
                 Label5.Hide()
 
                 Label1.Show()
@@ -85,6 +81,8 @@
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Hide()
         statusFormView = False
+
+        My.Computer.Audio.Stop()
 
         typeTime = 1
         Timer1.Start()
@@ -122,6 +120,8 @@
         Me.Hide()
         statusFormView = False
 
+        My.Computer.Audio.Stop()
+
         typeTime = 2
         Timer1.Start()
         Button3.Hide()
@@ -138,6 +138,8 @@
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         Me.Hide()
         statusFormView = False
+
+        My.Computer.Audio.Stop()
 
         typeTime = 3
         Timer1.Start()
@@ -168,6 +170,8 @@
 
     Private Sub ToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem1.Click
         Form2.Show()
+        Me.Hide()
+        statusFormView = False
     End Sub
 
 
@@ -179,4 +183,6 @@
     Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
         Me.Close()
     End Sub
+
+
 End Class
