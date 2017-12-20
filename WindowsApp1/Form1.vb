@@ -9,7 +9,12 @@
 
     'Загрузка формы
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'Me.BackgroundImage = Image.FromFile("C:\tomat.jpg")
+
+        Button1.Text = "Start pomo time"
         Button1.Show()
+
+        Label1.Text = "Pomodoro time!"
         Label1.Show()
     End Sub
 
@@ -19,6 +24,7 @@
         Dim minuts, seconds, tecTime As Integer
         Dim nullSec As String
 
+        'Проверочные лейблы
         Label6.Text = "pomoTime = " & pomoTime
         Label8.Text = "shortBreakTime = " & shortBreakTime
         Label9.Text = "longBreakTime = " & longBreakTime
@@ -56,13 +62,17 @@
             If (typeTime = 1) Then
                 Label2.Hide()
 
-                Label4.Show()
+                Label1.Text = "Time to break!"
+                Label1.Show()
+
                 Button3.Show()
                 Button4.Show()
             Else
-                Label5.Hide()
+                Label2.Hide()
 
+                Label1.Text = "Pomodoro time!"
                 Label1.Show()
+
                 Button1.Text = "Start pomo time"
                 Button1.Show()
             End If
@@ -91,6 +101,8 @@
 
         Button2.Text = "Pause pomo time"
         Button2.Show()
+
+        Label2.Text = "Pomodoro time:"
         Label2.Show()
         Label3.Show()
     End Sub
@@ -126,11 +138,13 @@
         Timer1.Start()
         Button3.Hide()
         Button4.Hide()
-        Label4.Hide()
+        Label1.Hide()
 
         Button2.Text = "Pause short break"
         Button2.Show()
-        Label5.Show()
+
+        Label2.Text = "Time to break:"
+        Label2.Show()
         Label3.Show()
     End Sub
 
@@ -145,11 +159,13 @@
         Timer1.Start()
         Button3.Hide()
         Button4.Hide()
-        Label4.Hide()
+        Label1.Hide()
 
         Button2.Text = "Pause long break"
         Button2.Show()
-        Label5.Show()
+
+        Label2.Text = "Time to break:"
+        Label2.Show()
         Label3.Show()
     End Sub
 
