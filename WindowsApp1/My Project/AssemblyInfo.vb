@@ -12,7 +12,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyDescription("Pomodoro timer")>
 <Assembly: AssemblyCompany("mccrush.ru")>
 <Assembly: AssemblyProduct("PomoTime")>
-<Assembly: AssemblyCopyright("mccrush.ru ©  2017")>
+<Assembly: AssemblyCopyright("mccrush.ru © 2017")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(True)>
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' используя "*", как показано ниже:
 ' <Assembly: AssemblyVersion("1.0.*")>
 
-<Assembly: AssemblyVersion("1.0.0.0")>
-<Assembly: AssemblyFileVersion("1.0.0.0")>
+<Assembly: AssemblyVersion("1.0.1.1")>
+<Assembly: AssemblyFileVersion("1.0.1.1")>
