@@ -150,7 +150,7 @@
     <value>Microsoft Sans Serif, 15.75pt</value>
   </data>
   <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 15</value>
+    <value>5, 15</value>
   </data>
   <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>162, 25</value>
@@ -1441,7 +1441,7 @@
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="Label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 10</value>
+    <value>23, 10</value>
   </data>
   <data name="Label2.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>150, 0</value>
@@ -1482,14 +1482,18 @@
   <data name="Label3.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 30</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
   <data name="Label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 25</value>
+    <value>113, 25</value>
   </data>
   <data name="Label3.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
   <data name="Label3.Text" xml:space="preserve">
-    <value>24 m</value>
+    <value>         24 m</value>
   </data>
   <data name="Label3.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -2788,7 +2792,6 @@
   <data name="$this.Location" type="System.Drawing.Point, System.Drawing">
     <value>50, 100</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>

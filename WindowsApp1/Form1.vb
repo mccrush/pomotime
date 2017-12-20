@@ -63,7 +63,7 @@
 
                 Label2.Hide()
 
-                Label1.Text = "Time to break!"
+                Label1.Text = " Time to break!"
                 Label1.Show()
 
                 Button3.Height = 25
@@ -91,7 +91,11 @@
             seconds = tecTime Mod 60
             nullSec = If(tecTime Mod 60 >= 10, "", "0")
             Label7.Text = minuts & ":" & nullSec & seconds
-            Label3.Text = minuts & " m"
+            If (minuts >= 10) Then
+                Label3.Text = "         " & minuts & " m"
+            Else
+                Label3.Text = "          " & minuts & " m"
+            End If
         End If
     End Sub
 
