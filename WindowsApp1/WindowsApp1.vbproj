@@ -159,6 +159,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="pomotime.ico" />
+    <None Include="Resources\bg_red.png" />
+    <None Include="Resources\bg_green.png" />
     <None Include="Resources\abstract-1780285_640.png" />
   </ItemGroup>
   <ItemGroup>

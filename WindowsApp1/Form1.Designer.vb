@@ -50,36 +50,22 @@ Partial Class Form1
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.SystemColors.WindowFrame
-        Me.Button1.Location = New System.Drawing.Point(10, 55)
+        resources.ApplyResources(Me.Button1, "Button1")
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(150, 50)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Start pomo time"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Label1
         '
-        Me.Label1.AutoSize = True
+        resources.ApplyResources(Me.Label1, "Label1")
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(0, 15)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(162, 25)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Pomodoro time!"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.Label1.Visible = False
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(10, 55)
+        resources.ApplyResources(Me.Button2, "Button2")
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(150, 50)
-        Me.Button2.TabIndex = 2
-        Me.Button2.Text = "Pause pomo time"
         Me.Button2.UseVisualStyleBackColor = True
-        Me.Button2.Visible = False
         '
         'Timer1
         '
@@ -89,126 +75,79 @@ Partial Class Form1
         '
         Me.NotifyIcon1.BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Info
         Me.NotifyIcon1.ContextMenuStrip = Me.ContextMenuStrip1
-        Me.NotifyIcon1.Icon = CType(resources.GetObject("NotifyIcon1.Icon"), System.Drawing.Icon)
-        Me.NotifyIcon1.Text = "PomoTime"
-        Me.NotifyIcon1.Visible = True
+        resources.ApplyResources(Me.NotifyIcon1, "NotifyIcon1")
         '
         'ContextMenuStrip1
         '
         Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1, Me.AboutToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(117, 70)
+        resources.ApplyResources(Me.ContextMenuStrip1, "ContextMenuStrip1")
         '
         'ToolStripMenuItem1
         '
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(116, 22)
-        Me.ToolStripMenuItem1.Text = "Settings"
+        resources.ApplyResources(Me.ToolStripMenuItem1, "ToolStripMenuItem1")
         '
         'AboutToolStripMenuItem
         '
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(116, 22)
-        Me.AboutToolStripMenuItem.Text = "About"
+        resources.ApplyResources(Me.AboutToolStripMenuItem, "AboutToolStripMenuItem")
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(116, 22)
-        Me.ExitToolStripMenuItem.Text = "Exit"
+        resources.ApplyResources(Me.ExitToolStripMenuItem, "ExitToolStripMenuItem")
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(10, 55)
+        resources.ApplyResources(Me.Button3, "Button3")
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(150, 25)
-        Me.Button3.TabIndex = 3
-        Me.Button3.Text = "Start short break"
         Me.Button3.UseVisualStyleBackColor = True
-        Me.Button3.Visible = False
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(10, 80)
+        resources.ApplyResources(Me.Button4, "Button4")
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(150, 25)
-        Me.Button4.TabIndex = 4
-        Me.Button4.Text = "Start long break"
         Me.Button4.UseVisualStyleBackColor = True
-        Me.Button4.Visible = False
         '
         'Label2
         '
-        Me.Label2.AutoSize = True
+        resources.ApplyResources(Me.Label2, "Label2")
         Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(0, 10)
-        Me.Label2.MaximumSize = New System.Drawing.Size(150, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(120, 20)
-        Me.Label2.TabIndex = 5
-        Me.Label2.Text = "Pomodoro time:"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.Label2.Visible = False
         '
         'Label3
         '
-        Me.Label3.AutoSize = True
+        resources.ApplyResources(Me.Label3, "Label3")
         Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(0, 30)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(59, 25)
-        Me.Label3.TabIndex = 6
-        Me.Label3.Text = "24 m"
-        Me.Label3.Visible = False
         '
         'Label7
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(69, 184)
+        resources.ApplyResources(Me.Label7, "Label7")
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(39, 13)
-        Me.Label7.TabIndex = 10
-        Me.Label7.Text = "Label7"
         '
         'Label6
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(179, 122)
+        resources.ApplyResources(Me.Label6, "Label6")
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(39, 13)
-        Me.Label6.TabIndex = 11
-        Me.Label6.Text = "Label6"
         '
         'Label8
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(179, 138)
+        resources.ApplyResources(Me.Label8, "Label8")
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(39, 13)
-        Me.Label8.TabIndex = 12
-        Me.Label8.Text = "Label8"
         '
         'Label9
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(179, 151)
+        resources.ApplyResources(Me.Label9, "Label9")
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(39, 13)
-        Me.Label9.TabIndex = 13
-        Me.Label9.Text = "Label9"
         '
         'Label10
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(179, 183)
+        resources.ApplyResources(Me.Label10, "Label10")
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(45, 13)
-        Me.Label10.TabIndex = 14
-        Me.Label10.Text = "Label10"
         '
         'EventLog1
         '
@@ -216,10 +155,10 @@ Partial Class Form1
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DarkRed
-        Me.ClientSize = New System.Drawing.Size(168, 108)
+        Me.BackgroundImage = Global.WindowsApp1.My.Resources.Resources.bg_red
         Me.ControlBox = False
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
@@ -235,15 +174,12 @@ Partial Class Form1
         Me.Controls.Add(Me.Button1)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.KeyPreview = True
-        Me.Location = New System.Drawing.Point(50, 100)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Form1"
         Me.ShowIcon = False
         Me.ShowInTaskbar = False
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.TopMost = True
         Me.ContextMenuStrip1.ResumeLayout(False)
         CType(Me.EventLog1, System.ComponentModel.ISupportInitialize).EndInit()

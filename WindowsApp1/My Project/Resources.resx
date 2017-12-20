@@ -121,4 +121,10 @@
   <data name="abstract-1780285_640" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\abstract-1780285_640.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bg_green" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg_green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bg_red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg_red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

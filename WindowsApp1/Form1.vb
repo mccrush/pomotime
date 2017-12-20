@@ -10,7 +10,7 @@
     'Загрузка формы
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Me.BackgroundImage = Image.FromFile("C:\tomat.jpg")
-
+        Me.BackgroundImage = My.Resources.bg_red
         Button1.Text = "Start pomo time"
         Button1.Show()
 
@@ -46,28 +46,34 @@
         End Select
 
         If (tecTime < 1) Then
-            Me.Show()
-            statusFormView = True
-
             pomoTime = My.Settings.pt * 60
             shortBreakTime = My.Settings.st * 60
             longBreakTime = My.Settings.lt * 60
 
-            My.Computer.Audio.Play("C:\elegant_ringtone.wav", AudioPlayMode.BackgroundLoop)
+            If (My.Settings.sn) Then
+                My.Computer.Audio.Play("C:\elegant_ringtone.wav", AudioPlayMode.BackgroundLoop)
+            End If
 
             Timer1.Stop()
             Button2.Hide()
             Label3.Hide()
 
             If (typeTime = 1) Then
+                Me.BackgroundImage = My.Resources.bg_green
+
                 Label2.Hide()
 
                 Label1.Text = "Time to break!"
                 Label1.Show()
 
+                Button3.Height = 25
                 Button3.Show()
+
+                Button4.Height = 25
+                Button4.Location = New Point(10, 80)
                 Button4.Show()
             Else
+                Me.BackgroundImage = My.Resources.bg_red
                 Label2.Hide()
 
                 Label1.Text = "Pomodoro time!"
@@ -76,6 +82,9 @@
                 Button1.Text = "Start pomo time"
                 Button1.Show()
             End If
+
+            Me.Show()
+            statusFormView = True
 
         Else
             minuts = Int(tecTime / 60) + 1
@@ -116,9 +125,12 @@
                 Button1.Text = "Continue pomo time"
                 Button1.Show()
             Case 2
+                Button3.Height = 50
                 Button3.Text = "Continue short break"
                 Button3.Show()
             Case 3
+                Button4.Height = 50
+                Button4.Location = New Point(10, 55)
                 Button4.Text = "Continue long break"
                 Button4.Show()
             Case Else

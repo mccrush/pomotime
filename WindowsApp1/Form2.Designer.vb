@@ -37,101 +37,62 @@ Partial Class Form2
         '
         'CheckBox1
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(166, 98)
+        resources.ApplyResources(Me.CheckBox1, "CheckBox1")
         Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox1.TabIndex = 0
         Me.CheckBox1.UseVisualStyleBackColor = True
         '
         'Label1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 37)
+        resources.ApplyResources(Me.Label1, "Label1")
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(123, 16)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Time of short break"
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(143, 7)
+        resources.ApplyResources(Me.TextBox1, "TextBox1")
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(38, 20)
-        Me.TextBox1.TabIndex = 6
-        Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label2
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        resources.ApplyResources(Me.Label2, "Label2")
         Me.Label2.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label2.Location = New System.Drawing.Point(12, 9)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(106, 16)
-        Me.Label2.TabIndex = 5
-        Me.Label2.Text = "Time Pomodoro"
         '
         'Label3
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Label3.Location = New System.Drawing.Point(12, 68)
+        resources.ApplyResources(Me.Label3, "Label3")
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(120, 16)
-        Me.Label3.TabIndex = 7
-        Me.Label3.Text = "Time of long break"
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(143, 35)
+        resources.ApplyResources(Me.TextBox2, "TextBox2")
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(38, 20)
-        Me.TextBox2.TabIndex = 8
-        Me.TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(143, 66)
+        resources.ApplyResources(Me.TextBox3, "TextBox3")
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(38, 20)
-        Me.TextBox3.TabIndex = 9
-        Me.TextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label4
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Label4.Location = New System.Drawing.Point(12, 96)
+        resources.ApplyResources(Me.Label4, "Label4")
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(113, 16)
-        Me.Label4.TabIndex = 10
-        Me.Label4.Text = "Sound notification"
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(15, 123)
+        resources.ApplyResources(Me.Button1, "Button1")
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(80, 23)
-        Me.Button1.TabIndex = 11
-        Me.Button1.Text = "Cancel"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(101, 123)
+        resources.ApplyResources(Me.Button2, "Button2")
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(80, 23)
-        Me.Button2.TabIndex = 12
-        Me.Button2.Text = "Save and Q"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Form2
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(195, 155)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label4)
@@ -142,13 +103,11 @@ Partial Class Form2
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.CheckBox1)
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Form2"
         Me.ShowInTaskbar = False
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Settings"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
