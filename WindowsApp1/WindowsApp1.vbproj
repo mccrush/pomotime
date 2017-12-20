@@ -181,6 +181,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="pomotime.ico" />
+    <None Include="Resources\elegant_ringtone.wav" />
     <None Include="Resources\bg_red.png" />
     <None Include="Resources\bg_green.png" />
   </ItemGroup>

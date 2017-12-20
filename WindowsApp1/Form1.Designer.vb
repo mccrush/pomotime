@@ -42,9 +42,7 @@ Partial Class Form1
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.EventLog1 = New System.Diagnostics.EventLog()
         Me.ContextMenuStrip1.SuspendLayout()
-        CType(Me.EventLog1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
@@ -149,10 +147,6 @@ Partial Class Form1
         resources.ApplyResources(Me.Label10, "Label10")
         Me.Label10.Name = "Label10"
         '
-        'EventLog1
-        '
-        Me.EventLog1.SynchronizingObject = Me
-        '
         'Form1
         '
         resources.ApplyResources(Me, "$this")
@@ -182,7 +176,6 @@ Partial Class Form1
         Me.ShowInTaskbar = False
         Me.TopMost = True
         Me.ContextMenuStrip1.ResumeLayout(False)
-        CType(Me.EventLog1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -206,5 +199,4 @@ Partial Class Form1
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
-    Friend WithEvents EventLog1 As EventLog
 End Class

@@ -79,5 +79,14 @@ Namespace My.Resources
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
+        
+        '''<summary>
+        '''  Поиск локализованного ресурса типа System.IO.UnmanagedMemoryStream, аналогичного System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property elegant_ringtone() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("elegant_ringtone", resourceCulture)
+            End Get
+        End Property
     End Module
 End Namespace

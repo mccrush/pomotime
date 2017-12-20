@@ -50,7 +50,7 @@
             longBreakTime = My.Settings.lt * 60
 
             If (My.Settings.sn) Then
-                My.Computer.Audio.Play("C:\elegant_ringtone.wav", AudioPlayMode.BackgroundLoop)
+                My.Computer.Audio.Play(My.Resources.elegant_ringtone, AudioPlayMode.BackgroundLoop)
             End If
 
             Timer1.Stop()
