@@ -9,7 +9,6 @@
 
     'Загрузка формы
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'Me.BackgroundImage = Image.FromFile("C:\tomat.jpg")
         Me.BackgroundImage = My.Resources.bg_red
         Button1.Text = "Start pomo time"
         Button1.Show()
@@ -107,6 +106,7 @@
 
         My.Computer.Audio.Stop()
 
+        pomoTime = My.Settings.pt * 60
         typeTime = 1
         Timer1.Start()
         Button1.Hide()
@@ -150,6 +150,7 @@
 
         My.Computer.Audio.Stop()
 
+        shortBreakTime = My.Settings.st * 60
         typeTime = 2
         Timer1.Start()
         Button3.Hide()
@@ -171,6 +172,7 @@
 
         My.Computer.Audio.Stop()
 
+        longBreakTime = My.Settings.lt * 60
         typeTime = 3
         Timer1.Start()
         Button3.Hide()
