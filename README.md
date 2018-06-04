@@ -1,2 +1,2 @@
-# pomotime
-Pomodoro timer
+# PomoTime
+Windows application - Timer for Pomodoro Technique
