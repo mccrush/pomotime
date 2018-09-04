@@ -108,7 +108,7 @@ Public Class Form1
     End Sub
 
 
-    'События по нажатию на каждую из кнопок
+    'Обработка события по нажатию на кнопку Start
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Hide()
         statusFormView = False
@@ -153,7 +153,7 @@ Public Class Form1
         End Select
     End Sub
 
-
+    'Обработка события нажатия на кнопку
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Me.Hide()
         statusFormView = False
@@ -173,7 +173,7 @@ Public Class Form1
         Label3.Show()
     End Sub
 
-
+    'Обработка события нажатия на кнопку
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         Me.Hide()
         statusFormView = False
@@ -223,4 +223,6 @@ Public Class Form1
     Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
         Me.Close()
     End Sub
+
+
 End Class

@@ -105,8 +105,8 @@ Partial Class Form2
         Me.Controls.Add(Me.CheckBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
-        Me.MinimizeBox = False
         Me.Name = "Form2"
+        Me.ShowIcon = False
         Me.ShowInTaskbar = False
         Me.ResumeLayout(False)
         Me.PerformLayout()
