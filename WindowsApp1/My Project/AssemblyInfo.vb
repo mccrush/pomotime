@@ -1,4 +1,6 @@
-﻿Imports System
+﻿Imports System.Resources
+
+Imports System
 Imports System.Reflection
 Imports System.Runtime.InteropServices
 
@@ -8,17 +10,17 @@ Imports System.Runtime.InteropServices
 
 ' Проверьте значения атрибутов сборки
 
-<Assembly: AssemblyTitle("PomoTime")>
-<Assembly: AssemblyDescription("Pomodoro timer")>
-<Assembly: AssemblyCompany("mccrush.ru")>
-<Assembly: AssemblyProduct("PomoTime")>
-<Assembly: AssemblyCopyright("mccrush.ru © 2017")>
-<Assembly: AssemblyTrademark("")>
+<Assembly: AssemblyTitle("PomoTime")> 
+<Assembly: AssemblyDescription("Pomodoro timer")> 
+<Assembly: AssemblyCompany("mccrush.ru")> 
+<Assembly: AssemblyProduct("PomoTime")> 
+<Assembly: AssemblyCopyright("mccrush.ru © 2018")> 
+<Assembly: AssemblyTrademark("")> 
 
-<Assembly: ComVisible(True)>
+<Assembly: ComVisible(True)> 
 
 'Следующий GUID служит для идентификации библиотеки типов, если этот проект будет видимым для COM
-<Assembly: Guid("4fbe2be3-0fce-451f-a28b-c653deab77ee")>
+<Assembly: Guid("4fbe2be3-0fce-451f-a28b-c653deab77ee")> 
 
 ' Сведения о версии сборки состоят из следующих четырех значений:
 '
@@ -31,5 +33,7 @@ Imports System.Runtime.InteropServices
 ' используя "*", как показано ниже:
 ' <Assembly: AssemblyVersion("1.0.*")>
 
-<Assembly: AssemblyVersion("1.0.1.1")>
-<Assembly: AssemblyFileVersion("1.0.1.1")>
+<Assembly: AssemblyVersion("1.2.1")> 
+<Assembly: AssemblyFileVersion("1.2.1")> 
+
+<Assembly: NeutralResourcesLanguageAttribute("en")> 

@@ -9,7 +9,8 @@
 
     'Загрузка формы
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Me.BackgroundImage = My.Resources.bg_red
+        'Me.BackgroundImage = My.Resources.bg_red
+        Me.BackColor = Color.Red
         Button1.Text = "Start pomo time"
         Button1.Show()
 
@@ -58,7 +59,8 @@
             Label3.Hide()
 
             If (typeTime = 1) Then
-                Me.BackgroundImage = My.Resources.bg_green
+                'Me.BackgroundImage = My.Resources.bg_green
+                Me.BackColor = Color.GreenYellow
 
                 Label2.Hide()
 
@@ -72,7 +74,9 @@
                 Button4.Location = New Point(10, 80)
                 Button4.Show()
             Else
-                Me.BackgroundImage = My.Resources.bg_red
+                'Me.BackgroundImage = My.Resources.bg_red
+                Me.BackColor = Color.Red
+
                 Label2.Hide()
 
                 Label1.Text = "Pomodoro time!"
@@ -121,12 +125,14 @@
     End Sub
 
 
+    'Обработка события нажатия на кнопку Pause
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Timer1.Stop()
         Button2.Hide()
         Select Case (typeTime)
             Case 1
                 Button1.Text = "Continue pomo time"
+                Me.BackColor = Color.GreenYellow
                 Button1.Show()
             Case 2
                 Button3.Height = 50
