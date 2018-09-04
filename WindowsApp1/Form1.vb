@@ -1,4 +1,13 @@
-﻿Public Class Form1
+﻿' Цвета
+' #dc3545 - красный основной фон
+' #bd2130 - красный основной темный
+' #721c24 - красный дополнительный темный
+' #f5c6cb - красный дополнительный светлый
+' #f8d7da - красный дополнительный самый светлый
+'
+'
+'
+Public Class Form1
 
     Public pomoTime As Integer = My.Settings.pt * 60
     Public shortBreakTime As Integer = My.Settings.st * 60
@@ -23,12 +32,6 @@
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         Dim minuts, seconds, tecTime As Integer
         Dim nullSec As String
-
-        'Проверочные лейблы
-        Label6.Text = "pomoTime = " & pomoTime
-        Label8.Text = "shortBreakTime = " & shortBreakTime
-        Label9.Text = "longBreakTime = " & longBreakTime
-        Label10.Text = "typeTime = " & typeTime
 
         Select Case (typeTime)
             Case 1
@@ -62,7 +65,6 @@
                 'Me.BackgroundImage = My.Resources.bg_green
                 Me.BackColor = Color.GreenYellow
 
-                Label2.Hide()
 
                 Label1.Text = " Time to break!"
                 Label1.Show()
@@ -76,8 +78,6 @@
             Else
                 'Me.BackgroundImage = My.Resources.bg_red
                 Me.BackColor = Color.Red
-
-                Label2.Hide()
 
                 Label1.Text = "Pomodoro time!"
                 Label1.Show()
@@ -93,7 +93,6 @@
             minuts = Int(tecTime / 60) + 1
             seconds = tecTime Mod 60
             nullSec = If(tecTime Mod 60 >= 10, "", "0")
-            Label7.Text = minuts & ":" & nullSec & seconds
             If (minuts >= 10) Then
                 Label3.Text = "         " & minuts & " m"
             Else
@@ -119,8 +118,6 @@
         Button2.Text = "Pause pomo time"
         Button2.Show()
 
-        Label2.Text = "Pomodoro time:"
-        Label2.Show()
         Label3.Show()
     End Sub
 
@@ -166,8 +163,6 @@
         Button2.Text = "Pause short break"
         Button2.Show()
 
-        Label2.Text = "Time to break:"
-        Label2.Show()
         Label3.Show()
     End Sub
 
@@ -188,8 +183,6 @@
         Button2.Text = "Pause long break"
         Button2.Show()
 
-        Label2.Text = "Time to break:"
-        Label2.Show()
         Label3.Show()
     End Sub
 
@@ -223,6 +216,4 @@
     Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
         Me.Close()
     End Sub
-
-
 End Class
