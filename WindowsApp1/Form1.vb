@@ -4,8 +4,13 @@
 ' #721c24 - красный дополнительный темный
 ' #f5c6cb - красный дополнительный светлый
 ' #f8d7da - красный дополнительный самый светлый
+
+' #28a745 - зеленый основной фон
+' #1e7e34 - зеленый основной темный
 '
-'
+
+' #f8f9fa - белый основной фон и текст
+' #343a40 - черный основной текст
 '
 Public Class Form1
 
@@ -19,7 +24,8 @@ Public Class Form1
     'Загрузка формы
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Me.BackgroundImage = My.Resources.bg_red
-        Me.BackColor = Color.Red
+        'Me.BackColor = Color.Red
+        Me.BackColor = Color.FromArgb(255, 189, 33, 48)
         Button1.Text = "Start pomo time"
         Button1.Show()
 
@@ -63,7 +69,7 @@ Public Class Form1
 
             If (typeTime = 1) Then
                 'Me.BackgroundImage = My.Resources.bg_green
-                Me.BackColor = Color.GreenYellow
+                Me.BackColor = Color.FromArgb(255, 30, 126, 52)
 
 
                 Label1.Text = " Time to break!"
@@ -77,7 +83,7 @@ Public Class Form1
                 Button4.Show()
             Else
                 'Me.BackgroundImage = My.Resources.bg_red
-                Me.BackColor = Color.Red
+                Me.BackColor = Color.FromArgb(255, 189, 33, 48)
 
                 Label1.Text = "Pomodoro time!"
                 Label1.Show()
@@ -129,7 +135,8 @@ Public Class Form1
         Select Case (typeTime)
             Case 1
                 Button1.Text = "Continue pomo time"
-                Me.BackColor = Color.GreenYellow
+                ' Красный
+                Me.BackColor = Color.FromArgb(255, 189, 33, 48)
                 Button1.Show()
             Case 2
                 Button3.Height = 50
