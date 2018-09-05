@@ -65,7 +65,6 @@ Partial Class Form1
         '
         'NotifyIcon1
         '
-        Me.NotifyIcon1.BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Info
         Me.NotifyIcon1.ContextMenuStrip = Me.ContextMenuStrip1
         resources.ApplyResources(Me.NotifyIcon1, "NotifyIcon1")
         '
@@ -106,7 +105,6 @@ Partial Class Form1
         '
         'Button4
         '
-        Me.Button4.DataBindings.Add(New System.Windows.Forms.Binding("ToolTip", Global.WindowsApp1.My.MySettings.Default, "ToolTip1", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
         resources.ApplyResources(Me.Button4, "Button4")
         Me.Button4.Name = "Button4"
         Me.Button4.UseVisualStyleBackColor = True
