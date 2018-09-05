@@ -36,6 +36,8 @@ Partial Class Form1
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Button4 = New System.Windows.Forms.Button()
+        Me.ButtonHide = New System.Windows.Forms.Button()
+        Me.ButtonClose = New System.Windows.Forms.Button()
         Me.ContextMenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -109,11 +111,35 @@ Partial Class Form1
         Me.Button4.Name = "Button4"
         Me.Button4.UseVisualStyleBackColor = True
         '
+        'ButtonHide
+        '
+        Me.ButtonHide.BackColor = System.Drawing.Color.White
+        Me.ButtonHide.FlatAppearance.BorderSize = 0
+        Me.ButtonHide.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver
+        Me.ButtonHide.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        resources.ApplyResources(Me.ButtonHide, "ButtonHide")
+        Me.ButtonHide.Name = "ButtonHide"
+        Me.ButtonHide.UseVisualStyleBackColor = False
+        '
+        'ButtonClose
+        '
+        Me.ButtonClose.BackColor = System.Drawing.Color.White
+        Me.ButtonClose.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control
+        Me.ButtonClose.FlatAppearance.BorderSize = 0
+        Me.ButtonClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.ButtonClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
+        resources.ApplyResources(Me.ButtonClose, "ButtonClose")
+        Me.ButtonClose.Name = "ButtonClose"
+        Me.ButtonClose.UseVisualStyleBackColor = False
+        '
         'Form1
         '
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.DimGray
+        Me.BackColor = System.Drawing.SystemColors.Control
+        Me.ControlBox = False
+        Me.Controls.Add(Me.ButtonClose)
+        Me.Controls.Add(Me.ButtonHide)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
@@ -121,7 +147,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)
         Me.DoubleBuffered = True
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.KeyPreview = True
         Me.MaximizeBox = False
         Me.Name = "Form1"
@@ -146,4 +172,6 @@ Partial Class Form1
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents Label3 As Label
+    Friend WithEvents ButtonHide As Button
+    Friend WithEvents ButtonClose As Button
 End Class

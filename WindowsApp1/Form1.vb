@@ -225,5 +225,12 @@ Public Class Form1
         Me.Close()
     End Sub
 
+    Private Sub ButtonClose_Click(sender As Object, e As EventArgs) Handles ButtonClose.Click
+        Me.Close()
+    End Sub
 
+    Private Sub ButtonHide_Click(sender As Object, e As EventArgs) Handles ButtonHide.Click
+        Me.Hide()
+        statusFormView = False
+    End Sub
 End Class
