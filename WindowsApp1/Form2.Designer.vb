@@ -35,6 +35,8 @@ Partial Class Form2
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.CheckBox2 = New System.Windows.Forms.CheckBox()
+        Me.ButtonClose = New System.Windows.Forms.Button()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.SuspendLayout()
         '
         'CheckBox1
@@ -102,10 +104,30 @@ Partial Class Form2
         Me.CheckBox2.Name = "CheckBox2"
         Me.CheckBox2.UseVisualStyleBackColor = True
         '
+        'ButtonClose
+        '
+        Me.ButtonClose.BackColor = System.Drawing.Color.White
+        Me.ButtonClose.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control
+        Me.ButtonClose.FlatAppearance.BorderSize = 0
+        Me.ButtonClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.ButtonClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
+        resources.ApplyResources(Me.ButtonClose, "ButtonClose")
+        Me.ButtonClose.Name = "ButtonClose"
+        Me.ButtonClose.UseVisualStyleBackColor = False
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.White
+        resources.ApplyResources(Me.Panel1, "Panel1")
+        Me.Panel1.Name = "Panel1"
+        '
         'Form2
         '
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ControlBox = False
+        Me.Controls.Add(Me.ButtonClose)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.CheckBox2)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Button2)
@@ -118,7 +140,7 @@ Partial Class Form2
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.CheckBox1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.MaximizeBox = False
         Me.Name = "Form2"
         Me.ShowIcon = False
@@ -140,4 +162,6 @@ Partial Class Form2
     Friend WithEvents Button2 As Button
     Friend WithEvents Label5 As Label
     Friend WithEvents CheckBox2 As CheckBox
+    Friend WithEvents ButtonClose As Button
+    Friend WithEvents Panel1 As Panel
 End Class
