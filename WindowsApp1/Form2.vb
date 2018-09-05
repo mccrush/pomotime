@@ -5,6 +5,7 @@
         My.Settings.st = Val(TextBox2.Text)
         My.Settings.lt = Val(TextBox3.Text)
         My.Settings.sn = CheckBox1.Checked
+        My.Settings.ss = CheckBox2.Checked
         Me.Close()
         Form1.pomoTime = My.Settings.pt * 60
         Form1.shortBreakTime = My.Settings.st * 60
@@ -26,6 +27,8 @@
         If (My.Settings.sn) Then
             CheckBox1.Checked = True
         End If
-
+        If (My.Settings.ss) Then
+            CheckBox2.Checked = True
+        End If
     End Sub
 End Class

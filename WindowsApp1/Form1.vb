@@ -18,6 +18,7 @@ Public Class Form1
     Public shortBreakTime As Integer = My.Settings.st * 60
     Public longBreakTime As Integer = My.Settings.lt * 60
     Public statusFormView As Boolean = True
+    Public showSeconds As Boolean = My.Settings.ss
     Public typeTime As Int32 = 1
 
 
@@ -96,13 +97,13 @@ Public Class Form1
             statusFormView = True
 
         Else
-            minuts = Int(tecTime / 60) + 1
+            minuts = Int(tecTime / 60)
             seconds = tecTime Mod 60
             nullSec = If(tecTime Mod 60 >= 10, "", "0")
-            If (minuts >= 10) Then
-                Label3.Text = "         " & minuts & " m"
+            If (showSeconds) Then
+                Label3.Text = "    " & minuts & ":" & nullSec & seconds
             Else
-                Label3.Text = "          " & minuts & " m"
+                Label3.Text = "    " & minuts
             End If
         End If
     End Sub
