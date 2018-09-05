@@ -34,12 +34,10 @@ Public Class Form1
     End Sub
 
 
-    'Таймер в ктором происходит самое главное
+    'Таймер в ктором происходит самое главное каждую секунду
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        Dim minuts, seconds, tecTime, pomoTime As Integer
+        Dim minuts, seconds, tecTime As Integer
         Dim nullSec As String
-
-        pomoTime = My.Settings.pt * 60
 
         Select Case (typeTime)
             Case 1
