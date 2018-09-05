@@ -189,8 +189,6 @@
   <ItemGroup>
     <Content Include="tomato.ico" />
     <None Include="Resources\elegant_ringtone.wav" />
-    <None Include="Resources\bg_red.png" />
-    <None Include="Resources\bg_green.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
