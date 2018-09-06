@@ -24,9 +24,9 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.ButtonStart = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.ButtonPause = New System.Windows.Forms.Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
@@ -41,12 +41,12 @@ Partial Class Form1
         Me.ContextMenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Button1
+        'ButtonStart
         '
-        Me.Button1.BackColor = System.Drawing.SystemColors.WindowFrame
-        resources.ApplyResources(Me.Button1, "Button1")
-        Me.Button1.Name = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.ButtonStart.BackColor = System.Drawing.SystemColors.WindowFrame
+        resources.ApplyResources(Me.ButtonStart, "ButtonStart")
+        Me.ButtonStart.Name = "ButtonStart"
+        Me.ButtonStart.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -55,11 +55,11 @@ Partial Class Form1
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Name = "Label1"
         '
-        'Button2
+        'ButtonPause
         '
-        resources.ApplyResources(Me.Button2, "Button2")
-        Me.Button2.Name = "Button2"
-        Me.Button2.UseVisualStyleBackColor = True
+        resources.ApplyResources(Me.ButtonPause, "ButtonPause")
+        Me.ButtonPause.Name = "ButtonPause"
+        Me.ButtonPause.UseVisualStyleBackColor = True
         '
         'Timer1
         '
@@ -143,9 +143,9 @@ Partial Class Form1
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.ButtonPause)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.ButtonStart)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.KeyPreview = True
@@ -160,9 +160,9 @@ Partial Class Form1
 
     End Sub
 
-    Friend WithEvents Button1 As Button
+    Friend WithEvents ButtonStart As Button
     Friend WithEvents Label1 As Label
-    Friend WithEvents Button2 As Button
+    Friend WithEvents ButtonPause As Button
     Friend WithEvents Timer1 As Timer
     Friend WithEvents NotifyIcon1 As NotifyIcon
     Friend WithEvents ContextMenuStrip1 As ContextMenuStrip

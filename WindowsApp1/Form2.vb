@@ -10,6 +10,8 @@
         Form1.Timer1.Stop()
         Form1.UpdateParameters()
         Form1.ShowTime()
+        Form1.ButtonPause.Hide()
+        Form1.ButtonStart.Show()
         Form1.Show()
     End Sub
 

@@ -36,8 +36,8 @@ Public Class Form1
         'Me.BackgroundImage = My.Resources.bg_red
         'Me.BackColor = Color.Red
         Me.BackColor = Color.FromArgb(255, 189, 33, 48)
-        Button1.Text = "Start pomo time"
-        Button1.Show()
+        ButtonStart.Text = "Start pomo time"
+        ButtonStart.Show()
 
         Label1.Text = "Pomodoro time!"
         Label1.Show()
@@ -96,7 +96,7 @@ Public Class Form1
             End If
 
             Timer1.Stop()
-            Button2.Hide()
+            ButtonPause.Hide()
             Label3.Hide()
 
             If (typeTime = 1) Then
@@ -120,8 +120,8 @@ Public Class Form1
                 Label1.Text = "Pomodoro time!"
                 Label1.Show()
 
-                Button1.Text = "Start pomo time"
-                Button1.Show()
+                ButtonStart.Text = "Start pomo time"
+                ButtonStart.Show()
             End If
 
             Me.Show()
@@ -134,7 +134,7 @@ Public Class Form1
 
 
     'Обработка события по нажатию на кнопку Start
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub ButtonStart_Click(sender As Object, e As EventArgs) Handles ButtonStart.Click
         Me.Hide()
         statusFormView = False
 
@@ -143,26 +143,26 @@ Public Class Form1
         'pomoTime = My.Settings.pt * 60
         typeTime = 1
         Timer1.Start()
-        Button1.Hide()
+        ButtonStart.Hide()
         Label1.Hide()
 
-        Button2.Text = "Pause pomo time"
-        Button2.Show()
+        ButtonPause.Text = "Pause pomo time"
+        ButtonPause.Show()
 
         Label3.Show()
     End Sub
 
 
     'Обработка события нажатия на кнопку Pause
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub ButtonPause_Click(sender As Object, e As EventArgs) Handles ButtonPause.Click
         Timer1.Stop()
-        Button2.Hide()
+        ButtonPause.Hide()
         Select Case (typeTime)
             Case 1
-                Button1.Text = "Continue pomo time"
+                ButtonStart.Text = "Continue pomo time"
                 ' Красный
                 Me.BackColor = Color.FromArgb(255, 189, 33, 48)
-                Button1.Show()
+                ButtonStart.Show()
             Case 2
                 Button3.Height = 50
                 Button3.Text = "Continue short break"
@@ -173,8 +173,8 @@ Public Class Form1
                 Button4.Text = "Continue long break"
                 Button4.Show()
             Case Else
-                Button1.Text = "Continue pomo time"
-                Button1.Show()
+                ButtonStart.Text = "Continue pomo time"
+                ButtonStart.Show()
         End Select
     End Sub
 
@@ -192,8 +192,8 @@ Public Class Form1
         Button4.Hide()
         Label1.Hide()
 
-        Button2.Text = "Pause short break"
-        Button2.Show()
+        ButtonPause.Text = "Pause short break"
+        ButtonPause.Show()
 
         Label3.Show()
     End Sub
@@ -212,8 +212,8 @@ Public Class Form1
         Button4.Hide()
         Label1.Hide()
 
-        Button2.Text = "Pause long break"
-        Button2.Show()
+        ButtonPause.Text = "Pause long break"
+        ButtonPause.Show()
 
         Label3.Show()
     End Sub
