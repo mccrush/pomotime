@@ -33,12 +33,15 @@ Partial Class Form1
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.ButtonShortBreak = New System.Windows.Forms.Button()
+        Me.LabelTime = New System.Windows.Forms.Label()
+        Me.ButtonLongBreak = New System.Windows.Forms.Button()
         Me.ButtonHide = New System.Windows.Forms.Button()
         Me.ButtonClose = New System.Windows.Forms.Button()
+        Me.ButtonReset = New System.Windows.Forms.Button()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.ContextMenuStrip1.SuspendLayout()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'ButtonStart
@@ -50,9 +53,9 @@ Partial Class Form1
         '
         'Label1
         '
-        resources.ApplyResources(Me.Label1, "Label1")
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.ForeColor = System.Drawing.Color.White
+        resources.ApplyResources(Me.Label1, "Label1")
+        Me.Label1.ForeColor = System.Drawing.Color.Black
         Me.Label1.Name = "Label1"
         '
         'ButtonPause
@@ -92,24 +95,25 @@ Partial Class Form1
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
         resources.ApplyResources(Me.ExitToolStripMenuItem, "ExitToolStripMenuItem")
         '
-        'Button3
+        'ButtonShortBreak
         '
-        resources.ApplyResources(Me.Button3, "Button3")
-        Me.Button3.Name = "Button3"
-        Me.Button3.UseVisualStyleBackColor = True
+        resources.ApplyResources(Me.ButtonShortBreak, "ButtonShortBreak")
+        Me.ButtonShortBreak.Name = "ButtonShortBreak"
+        Me.ButtonShortBreak.UseVisualStyleBackColor = True
         '
-        'Label3
+        'LabelTime
         '
-        resources.ApplyResources(Me.Label3, "Label3")
-        Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.ForeColor = System.Drawing.SystemColors.Window
-        Me.Label3.Name = "Label3"
+        Me.LabelTime.BackColor = System.Drawing.Color.Transparent
+        Me.LabelTime.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        resources.ApplyResources(Me.LabelTime, "LabelTime")
+        Me.LabelTime.ForeColor = System.Drawing.SystemColors.Window
+        Me.LabelTime.Name = "LabelTime"
         '
-        'Button4
+        'ButtonLongBreak
         '
-        resources.ApplyResources(Me.Button4, "Button4")
-        Me.Button4.Name = "Button4"
-        Me.Button4.UseVisualStyleBackColor = True
+        resources.ApplyResources(Me.ButtonLongBreak, "ButtonLongBreak")
+        Me.ButtonLongBreak.Name = "ButtonLongBreak"
+        Me.ButtonLongBreak.UseVisualStyleBackColor = True
         '
         'ButtonHide
         '
@@ -132,19 +136,33 @@ Partial Class Form1
         Me.ButtonClose.Name = "ButtonClose"
         Me.ButtonClose.UseVisualStyleBackColor = False
         '
+        'ButtonReset
+        '
+        resources.ApplyResources(Me.ButtonReset, "ButtonReset")
+        Me.ButtonReset.Name = "ButtonReset"
+        Me.ButtonReset.UseVisualStyleBackColor = True
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.White
+        Me.Panel1.Controls.Add(Me.ButtonHide)
+        Me.Panel1.Controls.Add(Me.ButtonClose)
+        resources.ApplyResources(Me.Panel1, "Panel1")
+        Me.Panel1.Name = "Panel1"
+        '
         'Form1
         '
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.ControlBox = False
-        Me.Controls.Add(Me.ButtonClose)
-        Me.Controls.Add(Me.ButtonHide)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.ButtonPause)
         Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.ButtonReset)
+        Me.Controls.Add(Me.LabelTime)
+        Me.Controls.Add(Me.ButtonLongBreak)
+        Me.Controls.Add(Me.ButtonShortBreak)
+        Me.Controls.Add(Me.ButtonPause)
         Me.Controls.Add(Me.ButtonStart)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
@@ -155,8 +173,8 @@ Partial Class Form1
         Me.ShowInTaskbar = False
         Me.TopMost = True
         Me.ContextMenuStrip1.ResumeLayout(False)
+        Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
@@ -169,9 +187,11 @@ Partial Class Form1
     Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AboutToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Label3 As Label
+    Friend WithEvents ButtonShortBreak As Button
+    Friend WithEvents ButtonLongBreak As Button
+    Friend WithEvents LabelTime As Label
     Friend WithEvents ButtonHide As Button
     Friend WithEvents ButtonClose As Button
+    Friend WithEvents ButtonReset As Button
+    Friend WithEvents Panel1 As Panel
 End Class

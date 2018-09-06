@@ -123,17 +123,17 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="ButtonStart.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 142</value>
+    <value>8, 76</value>
   </data>
   <data name="ButtonStart.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 50</value>
+    <value>160, 32</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="ButtonStart.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="ButtonStart.Text" xml:space="preserve">
-    <value>Start pomo time</value>
+    <value>Start timer</value>
   </data>
   <data name="&gt;&gt;ButtonStart.Name" xml:space="preserve">
     <value>ButtonStart</value>
@@ -147,20 +147,17 @@
   <data name="&gt;&gt;ButtonStart.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="Label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="Label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 15.75pt</value>
+    <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="Label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 0</value>
+    <value>0, 0</value>
   </data>
   <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 25</value>
+    <value>73, 28</value>
   </data>
   <data name="Label1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -169,7 +166,7 @@
     <value>PomoTime</value>
   </data>
   <data name="Label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
+    <value>MiddleLeft</value>
   </data>
   <data name="Label1.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -184,22 +181,22 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>0</value>
   </data>
   <data name="ButtonPause.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="ButtonPause.Location" type="System.Drawing.Point, System.Drawing">
-    <value>166, 86</value>
+    <value>8, 116</value>
   </data>
   <data name="ButtonPause.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 50</value>
+    <value>160, 32</value>
   </data>
   <data name="ButtonPause.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
   <data name="ButtonPause.Text" xml:space="preserve">
-    <value>Pause pomo time</value>
+    <value>Pause timer</value>
   </data>
   <data name="ButtonPause.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -214,7 +211,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ButtonPause.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <metadata name="Timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -1393,104 +1390,104 @@
   <data name="ExitToolStripMenuItem.Text" xml:space="preserve">
     <value>Exit</value>
   </data>
-  <data name="Button3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="ButtonShortBreak.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="Button3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 55</value>
+  <data name="ButtonShortBreak.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 156</value>
   </data>
-  <data name="Button3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 25</value>
+  <data name="ButtonShortBreak.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 32</value>
   </data>
-  <data name="Button3.TabIndex" type="System.Int32, mscorlib">
+  <data name="ButtonShortBreak.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="Button3.Text" xml:space="preserve">
-    <value>Start short break</value>
+  <data name="ButtonShortBreak.Text" xml:space="preserve">
+    <value>Short break</value>
   </data>
-  <data name="Button3.Visible" type="System.Boolean, mscorlib">
+  <data name="ButtonShortBreak.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;Button3.Name" xml:space="preserve">
-    <value>Button3</value>
+  <data name="&gt;&gt;ButtonShortBreak.Name" xml:space="preserve">
+    <value>ButtonShortBreak</value>
   </data>
-  <data name="&gt;&gt;Button3.Type" xml:space="preserve">
+  <data name="&gt;&gt;ButtonShortBreak.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Button3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;ButtonShortBreak.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;Button3.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="Label3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="Label3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 27pt</value>
-  </data>
-  <data name="Label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>163, 40</value>
-  </data>
-  <data name="Label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="Label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>187, 40</value>
-  </data>
-  <data name="Label3.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;ButtonShortBreak.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="Label3.Text" xml:space="preserve">
-    <value>         24 m</value>
+  <data name="LabelTime.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 24pt</value>
   </data>
-  <data name="Label3.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;Label3.Name" xml:space="preserve">
-    <value>Label3</value>
-  </data>
-  <data name="&gt;&gt;Label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Label3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Label3.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="Button4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="LabelTime.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="Button4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 111</value>
+  <data name="LabelTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 36</value>
   </data>
-  <data name="Button4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 25</value>
+  <data name="LabelTime.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
   </data>
-  <data name="Button4.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="LabelTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 32</value>
   </data>
-  <data name="Button4.Text" xml:space="preserve">
-    <value>Start long break</value>
+  <data name="LabelTime.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
-  <data name="Button4.Visible" type="System.Boolean, mscorlib">
+  <data name="LabelTime.Text" xml:space="preserve">
+    <value>24 m</value>
+  </data>
+  <data name="LabelTime.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="LabelTime.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;Button4.Name" xml:space="preserve">
-    <value>Button4</value>
+  <data name="&gt;&gt;LabelTime.Name" xml:space="preserve">
+    <value>LabelTime</value>
   </data>
-  <data name="&gt;&gt;Button4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;LabelTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Button4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;LabelTime.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;Button4.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;LabelTime.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="ButtonLongBreak.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ButtonLongBreak.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 156</value>
+  </data>
+  <data name="ButtonLongBreak.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 32</value>
+  </data>
+  <data name="ButtonLongBreak.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="ButtonLongBreak.Text" xml:space="preserve">
+    <value>Long break</value>
+  </data>
+  <data name="ButtonLongBreak.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;ButtonLongBreak.Name" xml:space="preserve">
+    <value>ButtonLongBreak</value>
+  </data>
+  <data name="&gt;&gt;ButtonLongBreak.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonLongBreak.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ButtonLongBreak.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="ButtonHide.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1499,7 +1496,7 @@
     <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
   </data>
   <data name="ButtonHide.Location" type="System.Drawing.Point, System.Drawing">
-    <value>333, 0</value>
+    <value>80, 0</value>
   </data>
   <data name="ButtonHide.Size" type="System.Drawing.Size, System.Drawing">
     <value>48, 28</value>
@@ -1517,10 +1514,10 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ButtonHide.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>Panel1</value>
   </data>
   <data name="&gt;&gt;ButtonHide.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>0</value>
   </data>
   <data name="ButtonClose.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -1532,7 +1529,7 @@
     <value>NoControl</value>
   </data>
   <data name="ButtonClose.Location" type="System.Drawing.Point, System.Drawing">
-    <value>381, 0</value>
+    <value>128, 0</value>
   </data>
   <data name="ButtonClose.Size" type="System.Drawing.Size, System.Drawing">
     <value>48, 28</value>
@@ -1550,9 +1547,54 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ButtonClose.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>Panel1</value>
   </data>
   <data name="&gt;&gt;ButtonClose.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ButtonReset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 196</value>
+  </data>
+  <data name="ButtonReset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 32</value>
+  </data>
+  <data name="ButtonReset.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="ButtonReset.Text" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="&gt;&gt;ButtonReset.Name" xml:space="preserve">
+    <value>ButtonReset</value>
+  </data>
+  <data name="&gt;&gt;ButtonReset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonReset.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ButtonReset.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="Panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="Panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 28</value>
+  </data>
+  <data name="Panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;Panel1.Name" xml:space="preserve">
+    <value>Panel1</value>
+  </data>
+  <data name="&gt;&gt;Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Panel1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -1562,7 +1604,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>429, 391</value>
+    <value>176, 391</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

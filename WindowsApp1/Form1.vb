@@ -52,9 +52,9 @@ Public Class Form1
         seconds = tecTime Mod 60
         nullSec = If(tecTime Mod 60 >= 10, "", "0")
         If (showSeconds) Then
-            Label3.Text = "    " & minuts & ":" & nullSec & seconds
+            LabelTime.Text = "    " & minuts & ":" & nullSec & seconds
         Else
-            Label3.Text = "    " & minuts
+            LabelTime.Text = "    " & minuts
         End If
         Return True
     End Function
@@ -97,7 +97,7 @@ Public Class Form1
 
             Timer1.Stop()
             ButtonPause.Hide()
-            Label3.Hide()
+            LabelTime.Hide()
 
             If (typeTime = 1) Then
                 'Me.BackgroundImage = My.Resources.bg_green
@@ -107,12 +107,12 @@ Public Class Form1
                 Label1.Text = " Time to break!"
                 Label1.Show()
 
-                Button3.Height = 25
-                Button3.Show()
+                ButtonShortBreak.Height = 25
+                ButtonShortBreak.Show()
 
-                Button4.Height = 25
-                Button4.Location = New Point(10, 80)
-                Button4.Show()
+                ButtonLongBreak.Height = 25
+                ButtonLongBreak.Location = New Point(10, 80)
+                ButtonLongBreak.Show()
             Else
                 'Me.BackgroundImage = My.Resources.bg_red
                 Me.BackColor = Color.FromArgb(255, 189, 33, 48)
@@ -149,7 +149,7 @@ Public Class Form1
         ButtonPause.Text = "Pause pomo time"
         ButtonPause.Show()
 
-        Label3.Show()
+        LabelTime.Show()
     End Sub
 
 
@@ -164,14 +164,14 @@ Public Class Form1
                 Me.BackColor = Color.FromArgb(255, 189, 33, 48)
                 ButtonStart.Show()
             Case 2
-                Button3.Height = 50
-                Button3.Text = "Continue short break"
-                Button3.Show()
+                ButtonShortBreak.Height = 50
+                ButtonShortBreak.Text = "Continue short break"
+                ButtonShortBreak.Show()
             Case 3
-                Button4.Height = 50
-                Button4.Location = New Point(10, 55)
-                Button4.Text = "Continue long break"
-                Button4.Show()
+                ButtonLongBreak.Height = 50
+                ButtonLongBreak.Location = New Point(10, 55)
+                ButtonLongBreak.Text = "Continue long break"
+                ButtonLongBreak.Show()
             Case Else
                 ButtonStart.Text = "Continue pomo time"
                 ButtonStart.Show()
@@ -179,7 +179,7 @@ Public Class Form1
     End Sub
 
     'Обработка события нажатия на кнопку
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub ButtonShortBreak_Click(sender As Object, e As EventArgs) Handles ButtonShortBreak.Click
         Me.Hide()
         statusFormView = False
 
@@ -188,18 +188,18 @@ Public Class Form1
         'shortBreakTime = My.Settings.st * 60
         typeTime = 2
         Timer1.Start()
-        Button3.Hide()
-        Button4.Hide()
+        ButtonShortBreak.Hide()
+        ButtonLongBreak.Hide()
         Label1.Hide()
 
         ButtonPause.Text = "Pause short break"
         ButtonPause.Show()
 
-        Label3.Show()
+        LabelTime.Show()
     End Sub
 
     'Обработка события нажатия на кнопку
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+    Private Sub ButtonLongBreak_Click(sender As Object, e As EventArgs) Handles ButtonLongBreak.Click
         Me.Hide()
         statusFormView = False
 
@@ -208,14 +208,14 @@ Public Class Form1
         'longBreakTime = My.Settings.lt * 60
         typeTime = 3
         Timer1.Start()
-        Button3.Hide()
-        Button4.Hide()
+        ButtonShortBreak.Hide()
+        ButtonLongBreak.Hide()
         Label1.Hide()
 
         ButtonPause.Text = "Pause long break"
         ButtonPause.Show()
 
-        Label3.Show()
+        LabelTime.Show()
     End Sub
 
 
@@ -256,5 +256,13 @@ Public Class Form1
     Private Sub ButtonHide_Click(sender As Object, e As EventArgs) Handles ButtonHide.Click
         Me.Hide()
         statusFormView = False
+    End Sub
+
+    Private Sub ButtonReset_Click(sender As Object, e As EventArgs) Handles ButtonReset.Click
+        Timer1.Stop()
+        UpdateParameters()
+        ShowTime()
+        ButtonPause.Hide()
+        ButtonStart.Show()
     End Sub
 End Class
