@@ -243,6 +243,9 @@
   <data name="&gt;&gt;Label3.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
+  <data name="ButtonSave.AccessibleDescription" xml:space="preserve">
+    <value>Save</value>
+  </data>
   <data name="ButtonSave.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 186</value>
   </data>
@@ -254,6 +257,12 @@
   </data>
   <data name="ButtonSave.Text" xml:space="preserve">
     <value>Save</value>
+  </data>
+  <metadata name="ToolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="ButtonSave.ToolTip" xml:space="preserve">
+    <value>Save settings</value>
   </data>
   <data name="&gt;&gt;ButtonSave.Name" xml:space="preserve">
     <value>ButtonSave</value>
@@ -321,6 +330,9 @@
   <data name="ButtonClose.Text" xml:space="preserve">
     <value>X</value>
   </data>
+  <data name="ButtonClose.ToolTip" xml:space="preserve">
+    <value>Close window</value>
+  </data>
   <data name="&gt;&gt;ButtonClose.Name" xml:space="preserve">
     <value>ButtonClose</value>
   </data>
@@ -332,33 +344,6 @@
   </data>
   <data name="&gt;&gt;ButtonClose.ZOrder" xml:space="preserve">
     <value>5</value>
-  </data>
-  <data name="Label7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt</value>
-  </data>
-  <data name="Label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="Label7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="Label7.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 0, 0</value>
-  </data>
-  <data name="Label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 28</value>
-  </data>
-  <data name="Label7.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="Label7.Text" xml:space="preserve">
-    <value>Settings</value>
-  </data>
-  <data name="Label7.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
   </data>
   <data name="&gt;&gt;Label7.Name" xml:space="preserve">
     <value>Label7</value>
@@ -426,6 +411,12 @@
   <data name="&gt;&gt;CheckBox3.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <metadata name="ToolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="ButtonSaveReset.AccessibleDescription" xml:space="preserve">
+    <value />
+  </data>
   <data name="ButtonSaveReset.Location" type="System.Drawing.Point, System.Drawing">
     <value>92, 186</value>
   </data>
@@ -438,6 +429,9 @@
   <data name="ButtonSaveReset.Text" xml:space="preserve">
     <value>Save and R</value>
   </data>
+  <data name="ButtonSaveReset.ToolTip" xml:space="preserve">
+    <value>Save and Reset timer</value>
+  </data>
   <data name="&gt;&gt;ButtonSaveReset.Name" xml:space="preserve">
     <value>ButtonSaveReset</value>
   </data>
@@ -449,6 +443,45 @@
   </data>
   <data name="&gt;&gt;ButtonSaveReset.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="Label7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="Label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="Label7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="Label7.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 0, 0</value>
+  </data>
+  <data name="Label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 28</value>
+  </data>
+  <data name="Label7.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="Label7.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="Label7.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;Label7.Name" xml:space="preserve">
+    <value>Label7</value>
+  </data>
+  <data name="&gt;&gt;Label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label7.Parent" xml:space="preserve">
+    <value>Panel1</value>
+  </data>
+  <data name="&gt;&gt;Label7.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="NumericUpDown1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9pt</value>
@@ -1674,6 +1707,12 @@
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
+  </data>
+  <data name="&gt;&gt;ToolTip1.Name" xml:space="preserve">
+    <value>ToolTip1</value>
+  </data>
+  <data name="&gt;&gt;ToolTip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Form2</value>

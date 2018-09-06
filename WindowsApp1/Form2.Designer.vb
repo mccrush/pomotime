@@ -22,6 +22,7 @@ Partial Class Form2
     'Не изменяйте ее в редакторе исходного кода.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form2))
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -37,6 +38,7 @@ Partial Class Form2
         Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
         Me.NumericUpDown2 = New System.Windows.Forms.NumericUpDown()
         Me.NumericUpDown3 = New System.Windows.Forms.NumericUpDown()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.Panel1.SuspendLayout()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -69,6 +71,7 @@ Partial Class Form2
         '
         resources.ApplyResources(Me.ButtonSave, "ButtonSave")
         Me.ButtonSave.Name = "ButtonSave"
+        Me.ToolTip1.SetToolTip(Me.ButtonSave, resources.GetString("ButtonSave.ToolTip"))
         Me.ButtonSave.UseVisualStyleBackColor = True
         '
         'CheckBox2
@@ -86,6 +89,7 @@ Partial Class Form2
         Me.ButtonClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
         resources.ApplyResources(Me.ButtonClose, "ButtonClose")
         Me.ButtonClose.Name = "ButtonClose"
+        Me.ToolTip1.SetToolTip(Me.ButtonClose, resources.GetString("ButtonClose.ToolTip"))
         Me.ButtonClose.UseVisualStyleBackColor = False
         '
         'Panel1
@@ -105,6 +109,7 @@ Partial Class Form2
         '
         resources.ApplyResources(Me.ButtonSaveReset, "ButtonSaveReset")
         Me.ButtonSaveReset.Name = "ButtonSaveReset"
+        Me.ToolTip1.SetToolTip(Me.ButtonSaveReset, resources.GetString("ButtonSaveReset.ToolTip"))
         Me.ButtonSaveReset.UseVisualStyleBackColor = True
         '
         'Label7
@@ -183,4 +188,5 @@ Partial Class Form2
     Friend WithEvents NumericUpDown1 As NumericUpDown
     Friend WithEvents NumericUpDown2 As NumericUpDown
     Friend WithEvents NumericUpDown3 As NumericUpDown
+    Friend WithEvents ToolTip1 As ToolTip
 End Class
