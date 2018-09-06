@@ -41,6 +41,7 @@ Partial Class Form1
         Me.ButtonReset = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.ContextMenuStrip1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -124,6 +125,7 @@ Partial Class Form1
         Me.ButtonHide.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         resources.ApplyResources(Me.ButtonHide, "ButtonHide")
         Me.ButtonHide.Name = "ButtonHide"
+        Me.ToolTip1.SetToolTip(Me.ButtonHide, resources.GetString("ButtonHide.ToolTip"))
         Me.ButtonHide.UseVisualStyleBackColor = False
         '
         'ButtonClose
@@ -141,6 +143,7 @@ Partial Class Form1
         '
         resources.ApplyResources(Me.ButtonReset, "ButtonReset")
         Me.ButtonReset.Name = "ButtonReset"
+        Me.ToolTip1.SetToolTip(Me.ButtonReset, resources.GetString("ButtonReset.ToolTip"))
         Me.ButtonReset.UseVisualStyleBackColor = True
         '
         'Panel1
@@ -203,4 +206,5 @@ Partial Class Form1
     Friend WithEvents ButtonReset As Button
     Friend WithEvents Panel1 As Panel
     Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents ToolTip1 As ToolTip
 End Class
