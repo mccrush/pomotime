@@ -21,8 +21,17 @@ Public Class Form1
     Public showSeconds As Boolean = My.Settings.ss
     Public typeTime As Int32 = 1
 
+    'Функция обновления значений параметров
+    Public Function UpdateParameters()
+        pomoTime = My.Settings.pt * 60
+        shortBreakTime = My.Settings.st * 60
+        longBreakTime = My.Settings.lt * 60
+        showSeconds = My.Settings.ss
+        Return True
+    End Function
 
-    'Загрузка формы
+
+    'Загрузка формы при запуске программы
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Me.BackgroundImage = My.Resources.bg_red
         'Me.BackColor = Color.Red
@@ -34,11 +43,25 @@ Public Class Form1
         Label1.Show()
     End Sub
 
-
-    'Таймер в ктором происходит самое главное каждую секунду
-    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        Dim minuts, seconds, tecTime As Integer
+    'Функция отображения текущего значения времени на форме
+    Public Function ShowTime()
+        Dim tecTime As Integer = GetTecTime()
+        Dim minuts, seconds As Integer
         Dim nullSec As String
+        minuts = Int(tecTime / 60)
+        seconds = tecTime Mod 60
+        nullSec = If(tecTime Mod 60 >= 10, "", "0")
+        If (showSeconds) Then
+            Label3.Text = "    " & minuts & ":" & nullSec & seconds
+        Else
+            Label3.Text = "    " & minuts
+        End If
+        Return True
+    End Function
+
+    'Функция получения текущего значения времени
+    Private Function GetTecTime()
+        Dim tecTime As Integer
 
         Select Case (typeTime)
             Case 1
@@ -54,6 +77,14 @@ Public Class Form1
                 pomoTime = pomoTime - 1
                 tecTime = pomoTime
         End Select
+
+        Return tecTime
+    End Function
+
+
+    'Таймер в ктором происходит самое главное каждую секунду
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        Dim tecTime As Integer = GetTecTime()
 
         If (tecTime < 1) Then
             pomoTime = My.Settings.pt * 60
@@ -97,14 +128,7 @@ Public Class Form1
             statusFormView = True
 
         Else
-            minuts = Int(tecTime / 60)
-            seconds = tecTime Mod 60
-            nullSec = If(tecTime Mod 60 >= 10, "", "0")
-            If (showSeconds) Then
-                Label3.Text = "    " & minuts & ":" & nullSec & seconds
-            Else
-                Label3.Text = "    " & minuts
-            End If
+            ShowTime()
         End If
     End Sub
 

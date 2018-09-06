@@ -7,10 +7,9 @@
         My.Settings.sn = CheckBox1.Checked
         My.Settings.ss = CheckBox2.Checked
         Me.Close()
-        Form1.pomoTime = My.Settings.pt * 60
-        Form1.shortBreakTime = My.Settings.st * 60
-        Form1.longBreakTime = My.Settings.lt * 60
-        Form1.Timer1.Start() 'Что-то это не запускает таймер...
+        Form1.Timer1.Stop()
+        Form1.UpdateParameters()
+        Form1.ShowTime()
         Form1.Show()
     End Sub
 
