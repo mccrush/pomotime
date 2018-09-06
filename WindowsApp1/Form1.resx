@@ -1400,7 +1400,7 @@
     <value>8, 156</value>
   </data>
   <data name="ButtonShortBreak.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 32</value>
+    <value>76, 32</value>
   </data>
   <data name="ButtonShortBreak.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -1463,10 +1463,10 @@
     <value>NoControl</value>
   </data>
   <data name="ButtonLongBreak.Location" type="System.Drawing.Point, System.Drawing">
-    <value>88, 156</value>
+    <value>91, 156</value>
   </data>
   <data name="ButtonLongBreak.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 32</value>
+    <value>76, 32</value>
   </data>
   <data name="ButtonLongBreak.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
