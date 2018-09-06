@@ -19,6 +19,7 @@ Public Class Form1
     Public longBreakTime As Integer = My.Settings.lt * 60
     Public statusFormView As Boolean = True
     Public showSeconds As Boolean = My.Settings.ss
+    Public hideAfterStart As Boolean = My.Settings.hw
     Public typeTime As Int32 = 1
 
     'Функция обновления значений параметров
@@ -26,7 +27,6 @@ Public Class Form1
         pomoTime = My.Settings.pt * 60
         shortBreakTime = My.Settings.st * 60
         longBreakTime = My.Settings.lt * 60
-        showSeconds = My.Settings.ss
         Return True
     End Function
 
@@ -57,7 +57,7 @@ Public Class Form1
 
     'Функция отображения текущего значения времени на форме
     Public Function ShowTime()
-        Dim tecTime As Integer = GetTecTime()
+        Dim tecTime As Integer = pomoTime
         Dim minuts, seconds As Integer
         Dim nullSec As String
         ListBox1.Items.Add("2. ShowTime is start")
@@ -90,9 +90,12 @@ Public Class Form1
         Dim tecTime As Integer = GetTecTime()
 
         If (tecTime < 1) Then
-            pomoTime = My.Settings.pt * 60
-            shortBreakTime = My.Settings.st * 60
-            longBreakTime = My.Settings.lt * 60
+            ' Это что-то на подобии сброса значений...
+            'pomoTime = My.Settings.pt * 60
+            'shortBreakTime = My.Settings.st * 60
+            'longBreakTime = My.Settings.lt * 60
+
+            UpdateParameters()
 
             If (My.Settings.sn) Then
                 My.Computer.Audio.Play(My.Resources.elegant_ringtone, AudioPlayMode.BackgroundLoop)
@@ -100,7 +103,7 @@ Public Class Form1
 
             Timer1.Stop()
             ButtonPause.Hide()
-            LabelTime.Hide()
+            'LabelTime.Hide()
 
             If (typeTime = 1) Then
                 'Me.BackgroundImage = My.Resources.bg_green
@@ -135,10 +138,12 @@ Public Class Form1
     End Sub
 
 
-    'Обработка события по нажатию на кнопку Start
+    'Обработка события по нажатию на кнопку Start timer
     Private Sub ButtonStart_Click(sender As Object, e As EventArgs) Handles ButtonStart.Click
-        Me.Hide()
-        statusFormView = False
+        If (hideAfterStart) Then
+            Me.Hide()
+            statusFormView = False
+        End If
 
         My.Computer.Audio.Stop()
 
@@ -149,7 +154,7 @@ Public Class Form1
         ButtonPause.Text = "Pause timer"
         ButtonPause.Show()
 
-        LabelTime.Show()
+        'LabelTime.Show()
     End Sub
 
 
@@ -180,8 +185,10 @@ Public Class Form1
 
     'Обработка события нажатия на кнопку
     Private Sub ButtonShortBreak_Click(sender As Object, e As EventArgs) Handles ButtonShortBreak.Click
-        Me.Hide()
-        statusFormView = False
+        If (hideAfterStart) Then
+            Me.Hide()
+            statusFormView = False
+        End If
 
         My.Computer.Audio.Stop()
 
@@ -199,8 +206,10 @@ Public Class Form1
 
     'Обработка события нажатия на кнопку
     Private Sub ButtonLongBreak_Click(sender As Object, e As EventArgs) Handles ButtonLongBreak.Click
-        Me.Hide()
-        statusFormView = False
+        If (hideAfterStart) Then
+            Me.Hide()
+            statusFormView = False
+        End If
 
         My.Computer.Audio.Stop()
 
@@ -255,11 +264,20 @@ Public Class Form1
         statusFormView = False
     End Sub
 
-    Private Sub ButtonReset_Click(sender As Object, e As EventArgs) Handles ButtonReset.Click
+    Public Function Reset()
         Timer1.Stop()
         UpdateParameters()
         ShowTime()
         ButtonPause.Hide()
+        ButtonStart.Text = "Start timer"
         ButtonStart.Show()
+        ButtonShortBreak.Hide()
+        ButtonLongBreak.Hide()
+        Me.BackColor = Color.FromArgb(255, 189, 33, 48)
+        Return True
+    End Function
+
+    Public Sub ButtonReset_Click(sender As Object, e As EventArgs) Handles ButtonReset.Click
+        Reset()
     End Sub
 End Class
