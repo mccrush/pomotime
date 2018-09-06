@@ -244,7 +244,7 @@
     <value>9</value>
   </data>
   <data name="ButtonSave.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 185</value>
+    <value>8, 186</value>
   </data>
   <data name="ButtonSave.Size" type="System.Drawing.Size, System.Drawing">
     <value>76, 32</value>
@@ -346,7 +346,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="Label7.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 0, 0</value>
+    <value>2, 0, 0, 0</value>
   </data>
   <data name="Label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>73, 28</value>
@@ -427,7 +427,7 @@
     <value>4</value>
   </data>
   <data name="ButtonSaveReset.Location" type="System.Drawing.Point, System.Drawing">
-    <value>92, 185</value>
+    <value>92, 186</value>
   </data>
   <data name="ButtonSaveReset.Size" type="System.Drawing.Size, System.Drawing">
     <value>76, 32</value>

@@ -160,7 +160,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="Label1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 0, 0</value>
+    <value>2, 0, 0, 0</value>
   </data>
   <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>73, 28</value>
