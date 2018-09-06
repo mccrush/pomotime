@@ -40,6 +40,7 @@ Partial Class Form1
         Me.ButtonClose = New System.Windows.Forms.Button()
         Me.ButtonReset = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.ContextMenuStrip1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -53,7 +54,7 @@ Partial Class Form1
         '
         'Label1
         '
-        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.BackColor = System.Drawing.Color.White
         resources.ApplyResources(Me.Label1, "Label1")
         Me.Label1.ForeColor = System.Drawing.Color.Black
         Me.Label1.Name = "Label1"
@@ -150,12 +151,19 @@ Partial Class Form1
         resources.ApplyResources(Me.Panel1, "Panel1")
         Me.Panel1.Name = "Panel1"
         '
+        'ListBox1
+        '
+        Me.ListBox1.FormattingEnabled = True
+        resources.ApplyResources(Me.ListBox1, "ListBox1")
+        Me.ListBox1.Name = "ListBox1"
+        '
         'Form1
         '
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.ControlBox = False
+        Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.ButtonReset)
@@ -194,4 +202,5 @@ Partial Class Form1
     Friend WithEvents ButtonClose As Button
     Friend WithEvents ButtonReset As Button
     Friend WithEvents Panel1 As Panel
+    Friend WithEvents ListBox1 As ListBox
 End Class

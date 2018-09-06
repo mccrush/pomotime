@@ -31,34 +31,6 @@ Public Class Form1
     End Function
 
 
-    'Загрузка формы при запуске программы
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'Me.BackgroundImage = My.Resources.bg_red
-        'Me.BackColor = Color.Red
-        Me.BackColor = Color.FromArgb(255, 189, 33, 48)
-        ButtonStart.Text = "Start pomo time"
-        ButtonStart.Show()
-
-        Label1.Text = "Pomodoro time!"
-        Label1.Show()
-    End Sub
-
-    'Функция отображения текущего значения времени на форме
-    Public Function ShowTime()
-        Dim tecTime As Integer = GetTecTime()
-        Dim minuts, seconds As Integer
-        Dim nullSec As String
-        minuts = Int(tecTime / 60)
-        seconds = tecTime Mod 60
-        nullSec = If(tecTime Mod 60 >= 10, "", "0")
-        If (showSeconds) Then
-            LabelTime.Text = "    " & minuts & ":" & nullSec & seconds
-        Else
-            LabelTime.Text = "    " & minuts
-        End If
-        Return True
-    End Function
-
     'Функция получения текущего значения времени
     Private Function GetTecTime()
         Dim tecTime As Integer
@@ -66,6 +38,7 @@ Public Class Form1
         Select Case (typeTime)
             Case 1
                 pomoTime = pomoTime - 1
+                'pomoTime = pomoTime
                 tecTime = pomoTime
             Case 2
                 shortBreakTime = shortBreakTime - 1
@@ -75,11 +48,41 @@ Public Class Form1
                 tecTime = longBreakTime
             Case Else
                 pomoTime = pomoTime - 1
+                'pomoTime = pomoTime
                 tecTime = pomoTime
         End Select
 
         Return tecTime
     End Function
+
+    'Функция отображения текущего значения времени на форме
+    Public Function ShowTime()
+        Dim tecTime As Integer = GetTecTime()
+        Dim minuts, seconds As Integer
+        Dim nullSec As String
+        ListBox1.Items.Add("2. ShowTime is start")
+        minuts = Int(tecTime / 60)
+        seconds = tecTime Mod 60
+        nullSec = If(tecTime Mod 60 >= 10, "", "0")
+        If (showSeconds) Then
+            LabelTime.Text = minuts & ":" & nullSec & seconds
+            ListBox1.Items.Add("3. time: " & minuts & ":" & nullSec & seconds)
+        Else
+            LabelTime.Text = minuts
+        End If
+        Return True
+    End Function
+
+    'Загрузка формы при запуске программы
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'Me.BackgroundImage = My.Resources.bg_red
+        'Me.BackColor = Color.Red
+        Me.BackColor = Color.FromArgb(255, 189, 33, 48)
+        ButtonStart.Text = "Start timer"
+        ButtonStart.Show()
+        ListBox1.Items.Add("1. typeTime:" & typeTime)
+        ShowTime()
+    End Sub
 
 
     'Таймер в ктором происходит самое главное каждую секунду
@@ -104,8 +107,8 @@ Public Class Form1
                 Me.BackColor = Color.FromArgb(255, 30, 126, 52)
 
 
-                Label1.Text = " Time to break!"
-                Label1.Show()
+                LabelTime.Text = "Time to break!"
+
 
                 ButtonShortBreak.Height = 25
                 ButtonShortBreak.Show()
@@ -117,10 +120,9 @@ Public Class Form1
                 'Me.BackgroundImage = My.Resources.bg_red
                 Me.BackColor = Color.FromArgb(255, 189, 33, 48)
 
-                Label1.Text = "Pomodoro time!"
-                Label1.Show()
+                LabelTime.Text = "Pomodoro time!"
 
-                ButtonStart.Text = "Start pomo time"
+                ButtonStart.Text = "Start timer"
                 ButtonStart.Show()
             End If
 
@@ -140,13 +142,11 @@ Public Class Form1
 
         My.Computer.Audio.Stop()
 
-        'pomoTime = My.Settings.pt * 60
         typeTime = 1
         Timer1.Start()
         ButtonStart.Hide()
-        Label1.Hide()
 
-        ButtonPause.Text = "Pause pomo time"
+        ButtonPause.Text = "Pause timer"
         ButtonPause.Show()
 
         LabelTime.Show()
@@ -159,21 +159,21 @@ Public Class Form1
         ButtonPause.Hide()
         Select Case (typeTime)
             Case 1
-                ButtonStart.Text = "Continue pomo time"
+                ButtonStart.Text = "Continue timer"
                 ' Красный
                 Me.BackColor = Color.FromArgb(255, 189, 33, 48)
                 ButtonStart.Show()
             Case 2
                 ButtonShortBreak.Height = 50
-                ButtonShortBreak.Text = "Continue short break"
+                ButtonShortBreak.Text = "Continue break"
                 ButtonShortBreak.Show()
             Case 3
                 ButtonLongBreak.Height = 50
                 ButtonLongBreak.Location = New Point(10, 55)
-                ButtonLongBreak.Text = "Continue long break"
+                ButtonLongBreak.Text = "Continue break"
                 ButtonLongBreak.Show()
             Case Else
-                ButtonStart.Text = "Continue pomo time"
+                ButtonStart.Text = "Continue timer"
                 ButtonStart.Show()
         End Select
     End Sub
@@ -190,9 +190,8 @@ Public Class Form1
         Timer1.Start()
         ButtonShortBreak.Hide()
         ButtonLongBreak.Hide()
-        Label1.Hide()
 
-        ButtonPause.Text = "Pause short break"
+        ButtonPause.Text = "Pause break"
         ButtonPause.Show()
 
         LabelTime.Show()
@@ -205,14 +204,12 @@ Public Class Form1
 
         My.Computer.Audio.Stop()
 
-        'longBreakTime = My.Settings.lt * 60
         typeTime = 3
         Timer1.Start()
         ButtonShortBreak.Hide()
         ButtonLongBreak.Hide()
-        Label1.Hide()
 
-        ButtonPause.Text = "Pause long break"
+        ButtonPause.Text = "Pause break"
         ButtonPause.Show()
 
         LabelTime.Show()
