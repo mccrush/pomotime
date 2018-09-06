@@ -56,17 +56,17 @@ Public Class Form1
     End Function
 
     'Функция отображения текущего значения времени на форме
-    Public Function ShowTime()
-        Dim tecTime As Integer = pomoTime
+    Public Function ShowTime(tecTime As Integer)
+        'Dim tecTime As Integer = GetTecTime() 'pomoTime
         Dim minuts, seconds As Integer
         Dim nullSec As String
-        ListBox1.Items.Add("2. ShowTime is start")
+        'ListBox1.Items.Add("2. ShowTime is start")
         minuts = Int(tecTime / 60)
         seconds = tecTime Mod 60
         nullSec = If(tecTime Mod 60 >= 10, "", "0")
         If (showSeconds) Then
             LabelTime.Text = minuts & ":" & nullSec & seconds
-            ListBox1.Items.Add("3. time: " & minuts & ":" & nullSec & seconds)
+            'ListBox1.Items.Add("3. time: " & minuts & ":" & nullSec & seconds)
         Else
             LabelTime.Text = minuts
         End If
@@ -80,8 +80,8 @@ Public Class Form1
         Me.BackColor = Color.FromArgb(255, 189, 33, 48)
         ButtonStart.Text = "Start timer"
         ButtonStart.Show()
-        ListBox1.Items.Add("1. typeTime:" & typeTime)
-        ShowTime()
+        'ListBox1.Items.Add("1. typeTime:" & typeTime)
+        ShowTime(pomoTime)
     End Sub
 
 
@@ -109,21 +109,16 @@ Public Class Form1
                 'Me.BackgroundImage = My.Resources.bg_green
                 Me.BackColor = Color.FromArgb(255, 30, 126, 52)
 
+                LabelTime.Text = "Break!"
 
-                LabelTime.Text = "Time to break!"
-
-
-                ButtonShortBreak.Height = 25
                 ButtonShortBreak.Show()
-
-                ButtonLongBreak.Height = 25
-                ButtonLongBreak.Location = New Point(10, 80)
                 ButtonLongBreak.Show()
             Else
                 'Me.BackgroundImage = My.Resources.bg_red
                 Me.BackColor = Color.FromArgb(255, 189, 33, 48)
 
-                LabelTime.Text = "Pomodoro time!"
+                'LabelTime.Text = "Pomodoro time!"
+                ShowTime(tecTime) 'Здесь не понятно что должно быть в итоге...
 
                 ButtonStart.Text = "Start timer"
                 ButtonStart.Show()
@@ -133,7 +128,7 @@ Public Class Form1
             statusFormView = True
 
         Else
-            ShowTime()
+            ShowTime(tecTime)
         End If
     End Sub
 
@@ -169,21 +164,19 @@ Public Class Form1
                 Me.BackColor = Color.FromArgb(255, 189, 33, 48)
                 ButtonStart.Show()
             Case 2
-                ButtonShortBreak.Height = 50
                 ButtonShortBreak.Text = "Continue break"
                 ButtonShortBreak.Show()
             Case 3
-                ButtonLongBreak.Height = 50
-                ButtonLongBreak.Location = New Point(10, 55)
                 ButtonLongBreak.Text = "Continue break"
                 ButtonLongBreak.Show()
             Case Else
                 ButtonStart.Text = "Continue timer"
+                Me.BackColor = Color.FromArgb(255, 189, 33, 48)
                 ButtonStart.Show()
         End Select
     End Sub
 
-    'Обработка события нажатия на кнопку
+    'Обработка события нажатия на кнопку Короткий перерыв
     Private Sub ButtonShortBreak_Click(sender As Object, e As EventArgs) Handles ButtonShortBreak.Click
         If (hideAfterStart) Then
             Me.Hide()
@@ -201,10 +194,10 @@ Public Class Form1
         ButtonPause.Text = "Pause break"
         ButtonPause.Show()
 
-        LabelTime.Show()
+        'LabelTime.Show()
     End Sub
 
-    'Обработка события нажатия на кнопку
+    'Обработка события нажатия на кнопку Длинный перерыв
     Private Sub ButtonLongBreak_Click(sender As Object, e As EventArgs) Handles ButtonLongBreak.Click
         If (hideAfterStart) Then
             Me.Hide()
@@ -221,7 +214,7 @@ Public Class Form1
         ButtonPause.Text = "Pause break"
         ButtonPause.Show()
 
-        LabelTime.Show()
+        'LabelTime.Show()
     End Sub
 
 
@@ -267,7 +260,7 @@ Public Class Form1
     Public Function Reset()
         Timer1.Stop()
         UpdateParameters()
-        ShowTime()
+        ShowTime(pomoTime)
         ButtonPause.Hide()
         ButtonStart.Text = "Start timer"
         ButtonStart.Show()

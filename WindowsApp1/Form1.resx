@@ -145,7 +145,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ButtonStart.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>8</value>
   </data>
   <data name="Label1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9pt</value>
@@ -184,13 +184,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="ButtonPause.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="ButtonPause.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 116</value>
+    <value>8, 77</value>
   </data>
   <data name="ButtonPause.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 32</value>
@@ -214,7 +214,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ButtonPause.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <metadata name="Timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -1397,7 +1397,7 @@
     <value>NoControl</value>
   </data>
   <data name="ButtonShortBreak.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 156</value>
+    <value>8, 77</value>
   </data>
   <data name="ButtonShortBreak.Size" type="System.Drawing.Size, System.Drawing">
     <value>76, 32</value>
@@ -1421,7 +1421,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ButtonShortBreak.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="LabelTime.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 24pt</value>
@@ -1457,13 +1457,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;LabelTime.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="ButtonLongBreak.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="ButtonLongBreak.Location" type="System.Drawing.Point, System.Drawing">
-    <value>91, 156</value>
+    <value>91, 77</value>
   </data>
   <data name="ButtonLongBreak.Size" type="System.Drawing.Size, System.Drawing">
     <value>76, 32</value>
@@ -1487,8 +1487,11 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ButtonLongBreak.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
+  <metadata name="ToolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>378, 17</value>
+  </metadata>
   <data name="ButtonHide.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
@@ -1507,9 +1510,6 @@
   <data name="ButtonHide.Text" xml:space="preserve">
     <value>_</value>
   </data>
-  <metadata name="ToolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>378, 17</value>
-  </metadata>
   <data name="ButtonHide.ToolTip" xml:space="preserve">
     <value>Hide window in tray</value>
   </data>
@@ -1559,7 +1559,7 @@
     <value>1</value>
   </data>
   <data name="ButtonReset.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 196</value>
+    <value>8, 117</value>
   </data>
   <data name="ButtonReset.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 32</value>
@@ -1570,6 +1570,9 @@
   <data name="ButtonReset.Text" xml:space="preserve">
     <value>Reset</value>
   </data>
+  <metadata name="ToolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>378, 17</value>
+  </metadata>
   <data name="ButtonReset.ToolTip" xml:space="preserve">
     <value>Reset and Stop timer</value>
   </data>
@@ -1583,7 +1586,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ButtonReset.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="Panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -1604,28 +1607,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Panel1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="ListBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 234</value>
-  </data>
-  <data name="ListBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>156, 147</value>
-  </data>
-  <data name="ListBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;ListBox1.Name" xml:space="preserve">
-    <value>ListBox1</value>
-  </data>
-  <data name="&gt;&gt;ListBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ListBox1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ListBox1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -1634,7 +1616,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>176, 391</value>
+    <value>176, 158</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
