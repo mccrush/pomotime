@@ -20,7 +20,6 @@ Public Class Form1
     Public statusFormView As Boolean = True
     Public showSeconds As Boolean = My.Settings.ss
     Public hideAfterStart As Boolean = My.Settings.hw
-    Public soundRing As String = My.Settings.rn
     Public typeTime As Int32 = 1
 
     'Функция обновления значений параметров
@@ -28,7 +27,8 @@ Public Class Form1
         pomoTime = My.Settings.pt * 60
         shortBreakTime = My.Settings.st * 60
         longBreakTime = My.Settings.lt * 60
-
+        showSeconds = My.Settings.ss
+        hideAfterStart = My.Settings.hw
         Return True
     End Function
 
@@ -100,17 +100,17 @@ Public Class Form1
             UpdateParameters()
 
             If (My.Settings.sn) Then
-                Select Case (soundRing)
-                    Case "r1"
-                        My.Computer.Audio.Play(My.Resources.r1, AudioPlayMode.BackgroundLoop)
-                    Case "r1"
-                        My.Computer.Audio.Play(My.Resources.r2, AudioPlayMode.BackgroundLoop)
-                    Case "r3"
-                        My.Computer.Audio.Play(My.Resources.r3, AudioPlayMode.BackgroundLoop)
-                    Case "r4"
-                        My.Computer.Audio.Play(My.Resources.r4, AudioPlayMode.BackgroundLoop)
-                    Case "r5"
-                        My.Computer.Audio.Play(My.Resources.r5, AudioPlayMode.BackgroundLoop)
+                Select Case (My.Settings.rn)
+                    Case "Ring_1"
+                        My.Computer.Audio.Play(My.Resources.Ring_1, AudioPlayMode.BackgroundLoop)
+                    Case "Ring_2"
+                        My.Computer.Audio.Play(My.Resources.Ring_2, AudioPlayMode.BackgroundLoop)
+                    Case "Ring_3"
+                        My.Computer.Audio.Play(My.Resources.Ring_3, AudioPlayMode.BackgroundLoop)
+                    Case "Ring_4"
+                        My.Computer.Audio.Play(My.Resources.Ring_4, AudioPlayMode.BackgroundLoop)
+                    Case "Ring_5"
+                        My.Computer.Audio.Play(My.Resources.Ring_5, AudioPlayMode.BackgroundLoop)
                 End Select
 
             End If

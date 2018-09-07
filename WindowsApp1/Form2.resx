@@ -151,7 +151,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;CheckBox1.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>15</value>
   </data>
   <data name="Label1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9pt</value>
@@ -181,7 +181,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>14</value>
   </data>
   <data name="Label2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9pt</value>
@@ -211,7 +211,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Label2.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>13</value>
   </data>
   <data name="Label3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9pt</value>
@@ -241,13 +241,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Label3.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>12</value>
   </data>
+  <metadata name="ToolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="ButtonSave.AccessibleDescription" xml:space="preserve">
     <value>Save</value>
   </data>
   <data name="ButtonSave.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 186</value>
+    <value>8, 212</value>
   </data>
   <data name="ButtonSave.Size" type="System.Drawing.Size, System.Drawing">
     <value>76, 32</value>
@@ -258,9 +261,6 @@
   <data name="ButtonSave.Text" xml:space="preserve">
     <value>Save</value>
   </data>
-  <metadata name="ToolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <data name="ButtonSave.ToolTip" xml:space="preserve">
     <value>Save settings</value>
   </data>
@@ -274,13 +274,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ButtonSave.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>11</value>
   </data>
   <data name="CheckBox2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="CheckBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 141</value>
+    <value>8, 167</value>
   </data>
   <data name="CheckBox2.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>Yes</value>
@@ -307,7 +307,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;CheckBox2.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>10</value>
   </data>
   <data name="ButtonClose.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -343,7 +343,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ButtonClose.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>8</value>
   </data>
   <data name="&gt;&gt;Label7.Name" xml:space="preserve">
     <value>Label7</value>
@@ -376,73 +376,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Panel1.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="CheckBox3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9pt</value>
-  </data>
-  <data name="CheckBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 162</value>
-  </data>
-  <data name="CheckBox3.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>Yes</value>
-  </data>
-  <data name="CheckBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>160, 21</value>
-  </data>
-  <data name="CheckBox3.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="CheckBox3.Text" xml:space="preserve">
-    <value>Hide after start timer</value>
-  </data>
-  <data name="CheckBox3.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="&gt;&gt;CheckBox3.Name" xml:space="preserve">
-    <value>CheckBox3</value>
-  </data>
-  <data name="&gt;&gt;CheckBox3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CheckBox3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;CheckBox3.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <metadata name="ToolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <data name="ButtonSaveReset.AccessibleDescription" xml:space="preserve">
-    <value />
-  </data>
-  <data name="ButtonSaveReset.Location" type="System.Drawing.Point, System.Drawing">
-    <value>92, 186</value>
-  </data>
-  <data name="ButtonSaveReset.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 32</value>
-  </data>
-  <data name="ButtonSaveReset.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="ButtonSaveReset.Text" xml:space="preserve">
-    <value>Save and R</value>
-  </data>
-  <data name="ButtonSaveReset.ToolTip" xml:space="preserve">
-    <value>Save and Reset timer</value>
-  </data>
-  <data name="&gt;&gt;ButtonSaveReset.Name" xml:space="preserve">
-    <value>ButtonSaveReset</value>
-  </data>
-  <data name="&gt;&gt;ButtonSaveReset.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ButtonSaveReset.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ButtonSaveReset.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>9</value>
   </data>
   <data name="Label7.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9pt</value>
@@ -483,11 +417,74 @@
   <data name="&gt;&gt;Label7.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="CheckBox3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="CheckBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 188</value>
+  </data>
+  <data name="CheckBox3.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="CheckBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 21</value>
+  </data>
+  <data name="CheckBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="CheckBox3.Text" xml:space="preserve">
+    <value>Hide after start timer</value>
+  </data>
+  <data name="CheckBox3.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;CheckBox3.Name" xml:space="preserve">
+    <value>CheckBox3</value>
+  </data>
+  <data name="&gt;&gt;CheckBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CheckBox3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CheckBox3.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="ButtonSaveReset.AccessibleDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ButtonSaveReset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>92, 212</value>
+  </data>
+  <data name="ButtonSaveReset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 32</value>
+  </data>
+  <data name="ButtonSaveReset.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="ButtonSaveReset.Text" xml:space="preserve">
+    <value>Save and R</value>
+  </data>
+  <data name="ButtonSaveReset.ToolTip" xml:space="preserve">
+    <value>Save and Reset timer</value>
+  </data>
+  <data name="&gt;&gt;ButtonSaveReset.Name" xml:space="preserve">
+    <value>ButtonSaveReset</value>
+  </data>
+  <data name="&gt;&gt;ButtonSaveReset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonSaveReset.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ButtonSaveReset.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
   <data name="NumericUpDown1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="NumericUpDown1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>121, 36</value>
+    <value>120, 36</value>
   </data>
   <data name="NumericUpDown1.Size" type="System.Drawing.Size, System.Drawing">
     <value>48, 21</value>
@@ -508,13 +505,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;NumericUpDown1.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>5</value>
   </data>
   <data name="NumericUpDown2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="NumericUpDown2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>121, 65</value>
+    <value>120, 65</value>
   </data>
   <data name="NumericUpDown2.Size" type="System.Drawing.Size, System.Drawing">
     <value>48, 21</value>
@@ -535,13 +532,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;NumericUpDown2.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>4</value>
   </data>
   <data name="NumericUpDown3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="NumericUpDown3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>121, 94</value>
+    <value>120, 94</value>
   </data>
   <data name="NumericUpDown3.Size" type="System.Drawing.Size, System.Drawing">
     <value>48, 21</value>
@@ -562,6 +559,102 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;NumericUpDown3.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="ToolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="ComboBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="ComboBox1.ItemHeight" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="ComboBox1.Items" xml:space="preserve">
+    <value>Ring_1</value>
+  </data>
+  <data name="ComboBox1.Items1" xml:space="preserve">
+    <value>Ring_2</value>
+  </data>
+  <data name="ComboBox1.Items2" xml:space="preserve">
+    <value>Ring_3</value>
+  </data>
+  <data name="ComboBox1.Items3" xml:space="preserve">
+    <value>Ring_4</value>
+  </data>
+  <data name="ComboBox1.Items4" xml:space="preserve">
+    <value>Ring_5</value>
+  </data>
+  <data name="ComboBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 142</value>
+  </data>
+  <data name="ComboBox1.MaxDropDownItems" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="ComboBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 21</value>
+  </data>
+  <data name="ComboBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;ComboBox1.Name" xml:space="preserve">
+    <value>ComboBox1</value>
+  </data>
+  <data name="&gt;&gt;ComboBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ComboBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ComboBox1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>92, 142</value>
+  </data>
+  <data name="Button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 22</value>
+  </data>
+  <data name="Button1.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="Button1.Text" xml:space="preserve">
+    <value>&gt;</value>
+  </data>
+  <data name="&gt;&gt;Button1.Name" xml:space="preserve">
+    <value>Button1</value>
+  </data>
+  <data name="&gt;&gt;Button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Button1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Button1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>134, 142</value>
+  </data>
+  <data name="Button2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 22</value>
+  </data>
+  <data name="Button2.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="Button2.Text" xml:space="preserve">
+    <value>| |</value>
+  </data>
+  <data name="&gt;&gt;Button2.Name" xml:space="preserve">
+    <value>Button2</value>
+  </data>
+  <data name="&gt;&gt;Button2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Button2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Button2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -571,7 +664,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>176, 226</value>
+    <value>176, 252</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

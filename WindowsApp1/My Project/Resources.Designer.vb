@@ -93,45 +93,45 @@ Namespace My.Resources
         '''<summary>
         '''  Поиск локализованного ресурса типа System.IO.UnmanagedMemoryStream, аналогичного System.IO.MemoryStream.
         '''</summary>
-        Friend ReadOnly Property r1() As System.IO.UnmanagedMemoryStream
+        Friend ReadOnly Property Ring_1() As System.IO.UnmanagedMemoryStream
             Get
-                Return ResourceManager.GetStream("r1", resourceCulture)
+                Return ResourceManager.GetStream("Ring_1", resourceCulture)
             End Get
         End Property
         
         '''<summary>
         '''  Поиск локализованного ресурса типа System.IO.UnmanagedMemoryStream, аналогичного System.IO.MemoryStream.
         '''</summary>
-        Friend ReadOnly Property r2() As System.IO.UnmanagedMemoryStream
+        Friend ReadOnly Property Ring_2() As System.IO.UnmanagedMemoryStream
             Get
-                Return ResourceManager.GetStream("r2", resourceCulture)
+                Return ResourceManager.GetStream("Ring_2", resourceCulture)
             End Get
         End Property
         
         '''<summary>
         '''  Поиск локализованного ресурса типа System.IO.UnmanagedMemoryStream, аналогичного System.IO.MemoryStream.
         '''</summary>
-        Friend ReadOnly Property r3() As System.IO.UnmanagedMemoryStream
+        Friend ReadOnly Property Ring_3() As System.IO.UnmanagedMemoryStream
             Get
-                Return ResourceManager.GetStream("r3", resourceCulture)
+                Return ResourceManager.GetStream("Ring_3", resourceCulture)
             End Get
         End Property
         
         '''<summary>
         '''  Поиск локализованного ресурса типа System.IO.UnmanagedMemoryStream, аналогичного System.IO.MemoryStream.
         '''</summary>
-        Friend ReadOnly Property r4() As System.IO.UnmanagedMemoryStream
+        Friend ReadOnly Property Ring_4() As System.IO.UnmanagedMemoryStream
             Get
-                Return ResourceManager.GetStream("r4", resourceCulture)
+                Return ResourceManager.GetStream("Ring_4", resourceCulture)
             End Get
         End Property
         
         '''<summary>
         '''  Поиск локализованного ресурса типа System.IO.UnmanagedMemoryStream, аналогичного System.IO.MemoryStream.
         '''</summary>
-        Friend ReadOnly Property r5() As System.IO.UnmanagedMemoryStream
+        Friend ReadOnly Property Ring_5() As System.IO.UnmanagedMemoryStream
             Get
-                Return ResourceManager.GetStream("r5", resourceCulture)
+                Return ResourceManager.GetStream("Ring_5", resourceCulture)
             End Get
         End Property
     End Module

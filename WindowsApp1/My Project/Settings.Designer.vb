@@ -128,7 +128,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("r1")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Ring_1")>  _
         Public Property rn() As String
             Get
                 Return CType(Me("rn"),String)

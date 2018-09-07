@@ -127,19 +127,19 @@
   <data name="diet" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons_ice\diet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="r1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Ring_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ambient-music-loop-112-bpm.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="r2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Ring_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\elegant_ringtone.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="r3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Ring_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cool-alarm-tone-notification-sound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="r4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Ring_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ticking-noise.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="r5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Ring_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Rhodes-piano-loop-120-bpm.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

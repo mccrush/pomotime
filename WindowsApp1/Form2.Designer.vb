@@ -32,13 +32,16 @@ Partial Class Form2
         Me.CheckBox2 = New System.Windows.Forms.CheckBox()
         Me.ButtonClose = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.CheckBox3 = New System.Windows.Forms.CheckBox()
         Me.ButtonSaveReset = New System.Windows.Forms.Button()
-        Me.Label7 = New System.Windows.Forms.Label()
         Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
         Me.NumericUpDown2 = New System.Windows.Forms.NumericUpDown()
         Me.NumericUpDown3 = New System.Windows.Forms.NumericUpDown()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -99,6 +102,13 @@ Partial Class Form2
         resources.ApplyResources(Me.Panel1, "Panel1")
         Me.Panel1.Name = "Panel1"
         '
+        'Label7
+        '
+        Me.Label7.BackColor = System.Drawing.Color.White
+        resources.ApplyResources(Me.Label7, "Label7")
+        Me.Label7.ForeColor = System.Drawing.Color.Black
+        Me.Label7.Name = "Label7"
+        '
         'CheckBox3
         '
         resources.ApplyResources(Me.CheckBox3, "CheckBox3")
@@ -111,13 +121,6 @@ Partial Class Form2
         Me.ButtonSaveReset.Name = "ButtonSaveReset"
         Me.ToolTip1.SetToolTip(Me.ButtonSaveReset, resources.GetString("ButtonSaveReset.ToolTip"))
         Me.ButtonSaveReset.UseVisualStyleBackColor = True
-        '
-        'Label7
-        '
-        Me.Label7.BackColor = System.Drawing.Color.White
-        resources.ApplyResources(Me.Label7, "Label7")
-        Me.Label7.ForeColor = System.Drawing.Color.Black
-        Me.Label7.Name = "Label7"
         '
         'NumericUpDown1
         '
@@ -143,11 +146,33 @@ Partial Class Form2
         Me.NumericUpDown3.Name = "NumericUpDown3"
         Me.NumericUpDown3.Value = New Decimal(New Integer() {15, 0, 0, 0})
         '
+        'ComboBox1
+        '
+        resources.ApplyResources(Me.ComboBox1, "ComboBox1")
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {resources.GetString("ComboBox1.Items"), resources.GetString("ComboBox1.Items1"), resources.GetString("ComboBox1.Items2"), resources.GetString("ComboBox1.Items3"), resources.GetString("ComboBox1.Items4")})
+        Me.ComboBox1.Name = "ComboBox1"
+        '
+        'Button1
+        '
+        resources.ApplyResources(Me.Button1, "Button1")
+        Me.Button1.Name = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        resources.ApplyResources(Me.Button2, "Button2")
+        Me.Button2.Name = "Button2"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'Form2
         '
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ControlBox = False
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.NumericUpDown3)
         Me.Controls.Add(Me.NumericUpDown2)
         Me.Controls.Add(Me.NumericUpDown1)
@@ -189,4 +214,7 @@ Partial Class Form2
     Friend WithEvents NumericUpDown2 As NumericUpDown
     Friend WithEvents NumericUpDown3 As NumericUpDown
     Friend WithEvents ToolTip1 As ToolTip
+    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
 End Class
