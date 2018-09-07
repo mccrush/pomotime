@@ -26,12 +26,9 @@ Partial Class FormAbout
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ButtonClose = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
         Me.TrackBar1 = New System.Windows.Forms.TrackBar()
         Me.ButtonPayPal = New System.Windows.Forms.Button()
@@ -40,6 +37,9 @@ Partial Class FormAbout
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -92,29 +92,18 @@ Partial Class FormAbout
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Label2.Location = New System.Drawing.Point(8, 48)
+        Me.Label2.Location = New System.Drawing.Point(8, 56)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(57, 16)
+        Me.Label2.Size = New System.Drawing.Size(87, 16)
         Me.Label2.TabIndex = 24
-        Me.Label2.Text = "Version:"
+        Me.Label2.Text = "Version: 2.1.2"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Label3.Location = New System.Drawing.Point(60, 48)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(35, 16)
-        Me.Label3.TabIndex = 25
-        Me.Label3.Text = "2.1.2"
-        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Label4.Location = New System.Drawing.Point(7, 64)
+        Me.Label4.Location = New System.Drawing.Point(8, 76)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(49, 16)
         Me.Label4.TabIndex = 26
@@ -126,7 +115,7 @@ Partial Class FormAbout
         Me.LinkLabel1.AutoSize = True
         Me.LinkLabel1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.LinkLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.LinkLabel1.Location = New System.Drawing.Point(65, 61)
+        Me.LinkLabel1.Location = New System.Drawing.Point(51, 76)
         Me.LinkLabel1.Name = "LinkLabel1"
         Me.LinkLabel1.Size = New System.Drawing.Size(72, 16)
         Me.LinkLabel1.TabIndex = 27
@@ -138,38 +127,18 @@ Partial Class FormAbout
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Label5.Location = New System.Drawing.Point(8, 32)
+        Me.Label5.Location = New System.Drawing.Point(8, 36)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(48, 16)
+        Me.Label5.Size = New System.Drawing.Size(118, 16)
         Me.Label5.TabIndex = 28
-        Me.Label5.Text = "Name:"
+        Me.Label5.Text = "Name: PomoTime"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Label6.Location = New System.Drawing.Point(60, 32)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(89, 16)
-        Me.Label6.TabIndex = 29
-        Me.Label6.Text = "«PomoTime»"
-        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(8, 406)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(160, 32)
-        Me.Button1.TabIndex = 30
-        Me.Button1.Text = "Ok"
-        Me.Button1.UseVisualStyleBackColor = True
         '
         'LinkLabel2
         '
         Me.LinkLabel2.AutoSize = True
         Me.LinkLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.LinkLabel2.Location = New System.Drawing.Point(5, 85)
+        Me.LinkLabel2.Location = New System.Drawing.Point(8, 96)
         Me.LinkLabel2.Name = "LinkLabel2"
         Me.LinkLabel2.Size = New System.Drawing.Size(91, 16)
         Me.LinkLabel2.TabIndex = 31
@@ -180,18 +149,19 @@ Partial Class FormAbout
         'TrackBar1
         '
         Me.TrackBar1.LargeChange = 1
-        Me.TrackBar1.Location = New System.Drawing.Point(11, 193)
+        Me.TrackBar1.Location = New System.Drawing.Point(8, 191)
         Me.TrackBar1.Maximum = 5
         Me.TrackBar1.Minimum = 1
         Me.TrackBar1.Name = "TrackBar1"
-        Me.TrackBar1.Size = New System.Drawing.Size(152, 45)
+        Me.TrackBar1.Size = New System.Drawing.Size(160, 45)
         Me.TrackBar1.TabIndex = 32
         Me.TrackBar1.TickStyle = System.Windows.Forms.TickStyle.TopLeft
         Me.TrackBar1.Value = 1
         '
         'ButtonPayPal
         '
-        Me.ButtonPayPal.Location = New System.Drawing.Point(8, 230)
+        Me.ButtonPayPal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonPayPal.Location = New System.Drawing.Point(8, 227)
         Me.ButtonPayPal.Name = "ButtonPayPal"
         Me.ButtonPayPal.Size = New System.Drawing.Size(76, 32)
         Me.ButtonPayPal.TabIndex = 33
@@ -200,27 +170,28 @@ Partial Class FormAbout
         '
         'Label7
         '
-        Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Label7.Location = New System.Drawing.Point(8, 125)
+        Me.Label7.Location = New System.Drawing.Point(8, 117)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(158, 24)
+        Me.Label7.Size = New System.Drawing.Size(160, 20)
         Me.Label7.TabIndex = 37
         Me.Label7.Text = "Donation for food:"
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'ButtonYandex
         '
-        Me.ButtonYandex.Location = New System.Drawing.Point(88, 230)
+        Me.ButtonYandex.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonYandex.Location = New System.Drawing.Point(92, 227)
         Me.ButtonYandex.Name = "ButtonYandex"
         Me.ButtonYandex.Size = New System.Drawing.Size(76, 32)
         Me.ButtonYandex.TabIndex = 38
-        Me.ButtonYandex.Text = "Yandex 70p"
+        Me.ButtonYandex.Text = "Yandex 70"
         Me.ButtonYandex.UseVisualStyleBackColor = True
         '
         'PictureBox3
         '
         Me.PictureBox3.Image = Global.WindowsApp1.My.Resources.Resources.diet
-        Me.PictureBox3.Location = New System.Drawing.Point(133, 155)
+        Me.PictureBox3.Location = New System.Drawing.Point(136, 144)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(32, 32)
         Me.PictureBox3.TabIndex = 36
@@ -229,7 +200,7 @@ Partial Class FormAbout
         'PictureBox2
         '
         Me.PictureBox2.Image = Global.WindowsApp1.My.Resources.Resources.burger
-        Me.PictureBox2.Location = New System.Drawing.Point(75, 155)
+        Me.PictureBox2.Location = New System.Drawing.Point(73, 144)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(32, 32)
         Me.PictureBox2.TabIndex = 35
@@ -239,18 +210,48 @@ Partial Class FormAbout
         '
         Me.PictureBox1.Image = Global.WindowsApp1.My.Resources.Resources.icecream
         Me.PictureBox1.InitialImage = Global.WindowsApp1.My.Resources.Resources.ice1
-        Me.PictureBox1.Location = New System.Drawing.Point(10, 155)
+        Me.PictureBox1.Location = New System.Drawing.Point(8, 144)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(32, 32)
         Me.PictureBox1.TabIndex = 34
         Me.PictureBox1.TabStop = False
         '
+        'Label8
+        '
+        Me.Label8.Location = New System.Drawing.Point(7, 178)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(32, 16)
+        Me.Label8.TabIndex = 39
+        Me.Label8.Text = "$1" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label9
+        '
+        Me.Label9.Location = New System.Drawing.Point(73, 176)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(32, 16)
+        Me.Label9.TabIndex = 40
+        Me.Label9.Text = "$3"
+        Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label10
+        '
+        Me.Label10.Location = New System.Drawing.Point(139, 176)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(32, 16)
+        Me.Label10.TabIndex = 41
+        Me.Label10.Text = "$5"
+        Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'FormAbout
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(176, 450)
+        Me.ClientSize = New System.Drawing.Size(176, 268)
         Me.ControlBox = False
+        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.ButtonYandex)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.PictureBox3)
@@ -259,12 +260,9 @@ Partial Class FormAbout
         Me.Controls.Add(Me.ButtonPayPal)
         Me.Controls.Add(Me.TrackBar1)
         Me.Controls.Add(Me.LinkLabel2)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.ButtonClose)
         Me.Controls.Add(Me.Panel1)
@@ -285,12 +283,9 @@ Partial Class FormAbout
     Friend WithEvents Label1 As Label
     Friend WithEvents ButtonClose As Button
     Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents LinkLabel1 As LinkLabel
     Friend WithEvents Label5 As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Button1 As Button
     Friend WithEvents LinkLabel2 As LinkLabel
     Friend WithEvents TrackBar1 As TrackBar
     Friend WithEvents ButtonPayPal As Button
@@ -299,4 +294,7 @@ Partial Class FormAbout
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents Label7 As Label
     Friend WithEvents ButtonYandex As Button
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Label10 As Label
 End Class
