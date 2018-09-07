@@ -118,7 +118,25 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ice3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons_ice\ice3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="elegant_ringtone" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\elegant_ringtone.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ice1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons_ice\ice1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ice2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons_ice\ice2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icecream" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons_ice\icecream.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="burger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons_ice\burger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="diet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons_ice\diet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

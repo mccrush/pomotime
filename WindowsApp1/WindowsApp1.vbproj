@@ -120,12 +120,6 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AboutBox1.Designer.vb">
-      <DependentUpon>AboutBox1.vb</DependentUpon>
-    </Compile>
-    <Compile Include="AboutBox1.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="ApplicationEvents.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
@@ -163,9 +157,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="AboutBox1.resx">
-      <DependentUpon>AboutBox1.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form1.en.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
@@ -199,6 +190,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\icons_ice\ice1.png" />
+    <None Include="Resources\icons_ice\ice2.png" />
+    <None Include="Resources\icons_ice\ice3.png" />
+    <None Include="Resources\icons_ice\icecream.png" />
+    <None Include="Resources\icons_ice\burger.png" />
+    <None Include="Resources\icons_ice\diet.png" />
     <Content Include="tomato.ico" />
     <None Include="Resources\elegant_ringtone.wav" />
   </ItemGroup>

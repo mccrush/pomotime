@@ -61,11 +61,71 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property burger() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("burger", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property diet() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("diet", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Поиск локализованного ресурса типа System.IO.UnmanagedMemoryStream, аналогичного System.IO.MemoryStream.
         '''</summary>
         Friend ReadOnly Property elegant_ringtone() As System.IO.UnmanagedMemoryStream
             Get
                 Return ResourceManager.GetStream("elegant_ringtone", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property ice1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("ice1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property ice2() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("ice2", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property ice3() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("ice3", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property icecream() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("icecream", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
     End Module
