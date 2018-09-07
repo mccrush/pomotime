@@ -20,6 +20,7 @@ Public Class Form1
     Public statusFormView As Boolean = True
     Public showSeconds As Boolean = My.Settings.ss
     Public hideAfterStart As Boolean = My.Settings.hw
+    Public soundRing As String = My.Settings.rn
     Public typeTime As Int32 = 1
 
     'Функция обновления значений параметров
@@ -99,7 +100,19 @@ Public Class Form1
             UpdateParameters()
 
             If (My.Settings.sn) Then
-                My.Computer.Audio.Play(My.Resources.elegant_ringtone, AudioPlayMode.BackgroundLoop)
+                Select Case (soundRing)
+                    Case "r1"
+                        My.Computer.Audio.Play(My.Resources.r1, AudioPlayMode.BackgroundLoop)
+                    Case "r1"
+                        My.Computer.Audio.Play(My.Resources.r2, AudioPlayMode.BackgroundLoop)
+                    Case "r3"
+                        My.Computer.Audio.Play(My.Resources.r3, AudioPlayMode.BackgroundLoop)
+                    Case "r4"
+                        My.Computer.Audio.Play(My.Resources.r4, AudioPlayMode.BackgroundLoop)
+                    Case "r5"
+                        My.Computer.Audio.Play(My.Resources.r5, AudioPlayMode.BackgroundLoop)
+                End Select
+
             End If
 
             Timer1.Stop()

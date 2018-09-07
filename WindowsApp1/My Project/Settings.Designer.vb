@@ -125,6 +125,18 @@ Namespace My
                 Me("hw") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("r1")>  _
+        Public Property rn() As String
+            Get
+                Return CType(Me("rn"),String)
+            End Get
+            Set
+                Me("rn") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

@@ -20,5 +20,8 @@
     <Setting Name="hw" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
+    <Setting Name="rn" Type="System.String" Scope="User">
+      <Value Profile="(Default)">r1</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

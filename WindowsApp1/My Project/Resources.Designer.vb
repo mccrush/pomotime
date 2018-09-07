@@ -81,21 +81,57 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Поиск локализованного ресурса типа System.IO.UnmanagedMemoryStream, аналогичного System.IO.MemoryStream.
-        '''</summary>
-        Friend ReadOnly Property elegant_ringtone() As System.IO.UnmanagedMemoryStream
-            Get
-                Return ResourceManager.GetStream("elegant_ringtone", resourceCulture)
-            End Get
-        End Property
-        
-        '''<summary>
         '''  Поиск локализованного ресурса типа System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property icecream() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("icecream", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Поиск локализованного ресурса типа System.IO.UnmanagedMemoryStream, аналогичного System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property r1() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("r1", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Поиск локализованного ресурса типа System.IO.UnmanagedMemoryStream, аналогичного System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property r2() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("r2", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Поиск локализованного ресурса типа System.IO.UnmanagedMemoryStream, аналогичного System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property r3() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("r3", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Поиск локализованного ресурса типа System.IO.UnmanagedMemoryStream, аналогичного System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property r4() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("r4", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Поиск локализованного ресурса типа System.IO.UnmanagedMemoryStream, аналогичного System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property r5() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("r5", resourceCulture)
             End Get
         End Property
     End Module
