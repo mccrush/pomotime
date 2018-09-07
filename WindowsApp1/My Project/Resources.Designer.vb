@@ -92,36 +92,6 @@ Namespace My.Resources
         '''<summary>
         '''  Поиск локализованного ресурса типа System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property ice1() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("ice1", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        '''</summary>
-        Friend ReadOnly Property ice2() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("ice2", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        '''</summary>
-        Friend ReadOnly Property ice3() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("ice3", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        '''</summary>
         Friend ReadOnly Property icecream() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("icecream", resourceCulture)

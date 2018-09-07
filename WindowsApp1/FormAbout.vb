@@ -2,9 +2,9 @@
 
     Private Sub ButtonClose_Click(sender As Object, e As EventArgs) Handles ButtonClose.Click
         Me.Close()
-        If (Form1.statusFormView) Then
-            Form1.Show()
-        End If
+        'If (Form1.statusFormView) Then
+        'Form1.Show()
+        'End If
     End Sub
 
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked

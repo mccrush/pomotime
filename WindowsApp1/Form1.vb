@@ -27,6 +27,7 @@ Public Class Form1
         pomoTime = My.Settings.pt * 60
         shortBreakTime = My.Settings.st * 60
         longBreakTime = My.Settings.lt * 60
+
         Return True
     End Function
 
@@ -105,24 +106,34 @@ Public Class Form1
             ButtonPause.Hide()
             'LabelTime.Hide()
 
+            ButtonShortBreak.Width = 76
+            ButtonShortBreak.Location = New Point(8, 76)
+            ButtonShortBreak.Text = "Short break"
+
+
+            ButtonLongBreak.Width = 76
+            ButtonLongBreak.Location = New Point(92, 76)
+            ButtonLongBreak.Text = "Long break"
+
+
             If (typeTime = 1) Then
                 'Me.BackgroundImage = My.Resources.bg_green
                 Me.BackColor = Color.FromArgb(255, 30, 126, 52)
-
-                LabelTime.Text = "Break!"
-
                 ButtonShortBreak.Show()
                 ButtonLongBreak.Show()
+
+                LabelTime.Text = "Break!"
             Else
                 'Me.BackgroundImage = My.Resources.bg_red
                 Me.BackColor = Color.FromArgb(255, 189, 33, 48)
 
                 'LabelTime.Text = "Pomodoro time!"
-                ShowTime(tecTime) 'Здесь не понятно что должно быть в итоге...
 
+                ShowTime(My.Settings.pt * 60) 'Отобразить время помидора или перерыва
                 ButtonStart.Text = "Start timer"
                 ButtonStart.Show()
             End If
+
 
             Me.Show()
             statusFormView = True
@@ -164,9 +175,12 @@ Public Class Form1
                 Me.BackColor = Color.FromArgb(255, 189, 33, 48)
                 ButtonStart.Show()
             Case 2
+                ButtonShortBreak.Width = 160
                 ButtonShortBreak.Text = "Continue break"
                 ButtonShortBreak.Show()
             Case 3
+                ButtonLongBreak.Width = 160
+                ButtonLongBreak.Location = New Point(8, 76)
                 ButtonLongBreak.Text = "Continue break"
                 ButtonLongBreak.Show()
             Case Else
@@ -234,13 +248,13 @@ Public Class Form1
 
     Private Sub ToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem1.Click
         Form2.Show()
-        Me.Hide()
-        statusFormView = False
+        'Me.Hide()
+        'statusFormView = False
     End Sub
 
 
     Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
-        Me.Hide()
+        'Me.Hide()
         FormAbout.Show()
     End Sub
 
@@ -259,12 +273,15 @@ Public Class Form1
     End Sub
 
     Public Function Reset()
+        My.Computer.Audio.Stop()
         Timer1.Stop()
         UpdateParameters()
         ShowTime(pomoTime)
         ButtonPause.Hide()
         ButtonStart.Text = "Start timer"
         ButtonStart.Show()
+        ButtonShortBreak.Width = 76
+        ButtonLongBreak.Width = 76
         ButtonShortBreak.Hide()
         ButtonLongBreak.Hide()
         Me.BackColor = Color.FromArgb(255, 189, 33, 48)

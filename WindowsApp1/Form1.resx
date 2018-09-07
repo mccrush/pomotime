@@ -190,7 +190,7 @@
     <value>NoControl</value>
   </data>
   <data name="ButtonPause.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 77</value>
+    <value>8, 76</value>
   </data>
   <data name="ButtonPause.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 32</value>
@@ -227,24 +227,6 @@
   </metadata>
   <data name="ContextMenuStrip1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9pt</value>
-  </data>
-  <data name="ToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 22</value>
-  </data>
-  <data name="ToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Settings</value>
-  </data>
-  <data name="AboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 22</value>
-  </data>
-  <data name="AboutToolStripMenuItem.Text" xml:space="preserve">
-    <value>About</value>
-  </data>
-  <data name="ExitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 22</value>
-  </data>
-  <data name="ExitToolStripMenuItem.Text" xml:space="preserve">
-    <value>Exit</value>
   </data>
   <data name="ContextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
     <value>119, 70</value>
@@ -1393,11 +1375,29 @@
   <data name="NotifyIcon1.Visible" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="ToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 22</value>
+  </data>
+  <data name="ToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="AboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 22</value>
+  </data>
+  <data name="AboutToolStripMenuItem.Text" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="ExitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 22</value>
+  </data>
+  <data name="ExitToolStripMenuItem.Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
   <data name="ButtonShortBreak.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="ButtonShortBreak.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 77</value>
+    <value>8, 76</value>
   </data>
   <data name="ButtonShortBreak.Size" type="System.Drawing.Size, System.Drawing">
     <value>76, 32</value>
@@ -1463,7 +1463,7 @@
     <value>NoControl</value>
   </data>
   <data name="ButtonLongBreak.Location" type="System.Drawing.Point, System.Drawing">
-    <value>92, 77</value>
+    <value>92, 76</value>
   </data>
   <data name="ButtonLongBreak.Size" type="System.Drawing.Size, System.Drawing">
     <value>76, 32</value>
@@ -1489,6 +1489,9 @@
   <data name="&gt;&gt;ButtonLongBreak.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <metadata name="ToolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>378, 17</value>
+  </metadata>
   <data name="ButtonHide.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
@@ -1507,9 +1510,6 @@
   <data name="ButtonHide.Text" xml:space="preserve">
     <value>_</value>
   </data>
-  <metadata name="ToolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>378, 17</value>
-  </metadata>
   <data name="ButtonHide.ToolTip" xml:space="preserve">
     <value>Hide window in tray</value>
   </data>
@@ -1559,7 +1559,7 @@
     <value>1</value>
   </data>
   <data name="ButtonReset.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 117</value>
+    <value>8, 116</value>
   </data>
   <data name="ButtonReset.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 32</value>
@@ -1570,6 +1570,9 @@
   <data name="ButtonReset.Text" xml:space="preserve">
     <value>Reset</value>
   </data>
+  <metadata name="ToolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>378, 17</value>
+  </metadata>
   <data name="ButtonReset.ToolTip" xml:space="preserve">
     <value>Reset and Stop timer</value>
   </data>

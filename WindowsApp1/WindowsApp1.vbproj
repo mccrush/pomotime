@@ -190,9 +190,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icons_ice\ice1.png" />
-    <None Include="Resources\icons_ice\ice2.png" />
-    <None Include="Resources\icons_ice\ice3.png" />
     <None Include="Resources\icons_ice\icecream.png" />
     <None Include="Resources\icons_ice\burger.png" />
     <None Include="Resources\icons_ice\diet.png" />

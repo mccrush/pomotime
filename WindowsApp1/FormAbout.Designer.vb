@@ -209,7 +209,6 @@ Partial Class FormAbout
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.WindowsApp1.My.Resources.Resources.icecream
-        Me.PictureBox1.InitialImage = Global.WindowsApp1.My.Resources.Resources.ice1
         Me.PictureBox1.Location = New System.Drawing.Point(8, 144)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(32, 32)
