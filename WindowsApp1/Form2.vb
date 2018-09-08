@@ -8,6 +8,7 @@
         My.Settings.ss = CheckBox2.Checked
         My.Settings.hw = CheckBox3.Checked
         My.Settings.rn = ComboBox1.Text
+        My.Settings.pl = Val(NumericUpDown4.Text)
         Me.Close()
         If (Form1.statusFormView) Then
             Form1.Show()
@@ -20,6 +21,7 @@
         NumericUpDown1.Text = My.Settings.pt
         NumericUpDown2.Text = My.Settings.st
         NumericUpDown3.Text = My.Settings.lt
+        NumericUpDown4.Text = My.Settings.pl
         ComboBox1.Text = My.Settings.rn
         If (My.Settings.sn) Then
             CheckBox1.Checked = True
@@ -49,6 +51,7 @@
         My.Settings.ss = CheckBox2.Checked
         My.Settings.hw = CheckBox3.Checked
         My.Settings.rn = ComboBox1.Text
+        My.Settings.pl = Val(NumericUpDown4.Text)
         Me.Close()
         Form1.Reset()
         If (Form1.statusFormView) Then

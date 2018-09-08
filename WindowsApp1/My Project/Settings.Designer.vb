@@ -137,6 +137,30 @@ Namespace My
                 Me("rn") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property cp() As Integer
+            Get
+                Return CType(Me("cp"),Integer)
+            End Get
+            Set
+                Me("cp") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("4")>  _
+        Public Property pl() As Integer
+            Get
+                Return CType(Me("pl"),Integer)
+            End Get
+            Set
+                Me("pl") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

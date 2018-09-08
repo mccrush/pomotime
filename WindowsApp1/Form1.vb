@@ -21,6 +21,7 @@ Public Class Form1
     Public statusSettingsView As Boolean = False
     Public showSeconds As Boolean = My.Settings.ss
     Public hideAfterStart As Boolean = My.Settings.hw
+    Public countPomodoros As Integer = 0
     Public typeTime As Int32 = 1
 
     'Функция обновления значений параметров
@@ -131,8 +132,18 @@ Public Class Form1
 
 
             If (typeTime = 1) Then
+                countPomodoros += 1
                 'Me.BackgroundImage = My.Resources.bg_green
                 Me.BackColor = Color.FromArgb(255, 30, 126, 52)
+
+                If (countPomodoros Mod My.Settings.pl = 0) Then
+                    ButtonLongBreak.ForeColor = Color.FromArgb(255, 30, 126, 52)
+                    ButtonShortBreak.ForeColor = Color.FromArgb(255, 0, 0, 0)
+                Else
+                    ButtonLongBreak.ForeColor = Color.FromArgb(255, 0, 0, 0)
+                    ButtonShortBreak.ForeColor = Color.FromArgb(255, 30, 126, 52)
+                End If
+
                 ButtonShortBreak.Show()
                 ButtonLongBreak.Show()
 

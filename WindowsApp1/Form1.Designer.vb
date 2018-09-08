@@ -100,7 +100,7 @@ Partial Class Form1
         '
         Me.ButtonShortBreak.FlatAppearance.BorderColor = System.Drawing.Color.Red
         resources.ApplyResources(Me.ButtonShortBreak, "ButtonShortBreak")
-        Me.ButtonShortBreak.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.ButtonShortBreak.ForeColor = System.Drawing.SystemColors.ControlText
         Me.ButtonShortBreak.Name = "ButtonShortBreak"
         Me.ButtonShortBreak.UseVisualStyleBackColor = True
         '

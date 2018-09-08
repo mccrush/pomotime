@@ -1394,7 +1394,7 @@
     <value>Exit</value>
   </data>
   <data name="ButtonShortBreak.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Underline</value>
+    <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
   <data name="ButtonShortBreak.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1461,6 +1461,9 @@
   </data>
   <data name="&gt;&gt;LabelTime.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="ButtonLongBreak.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
   </data>
   <data name="ButtonLongBreak.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>

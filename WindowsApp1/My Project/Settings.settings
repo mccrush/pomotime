@@ -23,5 +23,11 @@
     <Setting Name="rn" Type="System.String" Scope="User">
       <Value Profile="(Default)">Ring_1</Value>
     </Setting>
+    <Setting Name="cp" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="pl" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">4</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
