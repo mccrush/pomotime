@@ -18,6 +18,7 @@ Public Class Form1
     Public shortBreakTime As Integer = My.Settings.st * 60
     Public longBreakTime As Integer = My.Settings.lt * 60
     Public statusFormView As Boolean = True
+    Public statusSettingsView As Boolean = False
     Public showSeconds As Boolean = My.Settings.ss
     Public hideAfterStart As Boolean = My.Settings.hw
     Public typeTime As Int32 = 1
@@ -245,7 +246,7 @@ Public Class Form1
     End Sub
 
 
-    'Работа со второй формой и контекстным меню
+    'При клике по иконеке в трее левой кнопкой мыши
     Private Sub NotifyIcon1_MouseClick(sender As Object, e As MouseEventArgs) Handles NotifyIcon1.MouseClick
         If (e.Button = MouseButtons.Left) Then
             If (statusFormView) Then
@@ -254,20 +255,27 @@ Public Class Form1
             Else
                 Me.Show()
                 statusFormView = True
+                FormAbout.Hide()
             End If
         End If
     End Sub
 
 
     Private Sub ToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem1.Click
+        Me.Hide()
+        'statusFormView = False
         Form2.Show()
+        statusSettingsView = True
+        FormAbout.Hide()
         'Me.Hide()
         'statusFormView = False
     End Sub
 
 
     Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
-        'Me.Hide()
+        Me.Hide()
+        Form2.Hide()
+        statusSettingsView = False
         FormAbout.Show()
     End Sub
 

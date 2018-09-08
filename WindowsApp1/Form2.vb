@@ -1,5 +1,5 @@
 ﻿Public Class Form2
-    'Обработка события нажатия на кнопку Сохранить и выйти
+    'Обработка события нажатия на кнопку Сохранить
     Private Sub ButtonSave_Click(sender As Object, e As EventArgs) Handles ButtonSave.Click
         My.Settings.pt = Val(NumericUpDown1.Text)
         My.Settings.st = Val(NumericUpDown2.Text)
@@ -9,7 +9,10 @@
         My.Settings.hw = CheckBox3.Checked
         My.Settings.rn = ComboBox1.Text
         Me.Close()
-        Form1.Show()
+        If (Form1.statusFormView) Then
+            Form1.Show()
+            'Form1.statusFormView = True
+        End If
     End Sub
 
     'Действия при загрузки окна настроек
@@ -31,6 +34,10 @@
 
     Private Sub ButtonClose_Click(sender As Object, e As EventArgs) Handles ButtonClose.Click
         Me.Close()
+        If (Form1.statusFormView) Then
+            Form1.Show()
+            'Form1.statusFormView = True
+        End If
     End Sub
 
     'Обработка события нажатия на кнопку Сохранить и Сбросить таймер
@@ -44,7 +51,10 @@
         My.Settings.rn = ComboBox1.Text
         Me.Close()
         Form1.Reset()
-        Form1.Show()
+        If (Form1.statusFormView) Then
+            Form1.Show()
+            'Form1.statusFormView = True
+        End If
     End Sub
 
     Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged

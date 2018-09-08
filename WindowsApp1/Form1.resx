@@ -1393,6 +1393,9 @@
   <data name="ExitToolStripMenuItem.Text" xml:space="preserve">
     <value>Exit</value>
   </data>
+  <data name="ButtonShortBreak.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Underline</value>
+  </data>
   <data name="ButtonShortBreak.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -1570,9 +1573,6 @@
   <data name="ButtonReset.Text" xml:space="preserve">
     <value>Reset</value>
   </data>
-  <metadata name="ToolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>378, 17</value>
-  </metadata>
   <data name="ButtonReset.ToolTip" xml:space="preserve">
     <value>Reset and Stop timer</value>
   </data>
@@ -1609,6 +1609,9 @@
   <data name="&gt;&gt;Panel1.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <metadata name="ToolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>378, 17</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
