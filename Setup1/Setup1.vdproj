@@ -16,12 +16,18 @@
         "Entry"
         {
         "MsmKey" = "8:_87E6578950DA929644D67BBB96F90496"
-        "OwnerKey" = "8:_9D513A275FA64502936A100519F221DD"
+        "OwnerKey" = "8:_92C2075893604EDB90EBEB78ACF6A472"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_9D513A275FA64502936A100519F221DD"
+        "MsmKey" = "8:_92C2075893604EDB90EBEB78ACF6A472"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_E8AAC5D1EA604A3C8A851EB9A5BF7AEB"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -34,7 +40,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_9D513A275FA64502936A100519F221DD"
+        "OwnerKey" = "8:_92C2075893604EDB90EBEB78ACF6A472"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -55,6 +61,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -71,6 +93,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -131,6 +161,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E8AAC5D1EA604A3C8A851EB9A5BF7AEB"
+            {
+            "SourcePath" = "8:..\\WindowsApp1\\tomato.ico"
+            "TargetName" = "8:tomato.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_568538EBB07141CC8BF224EC668B85A1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
         }
         "FileType"
         {
@@ -158,6 +208,17 @@
             "Property" = "8:ProgramMenuFolder"
                 "Folders"
                 {
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_CE56B83007C4478D9829F9FEE1A47FCE"
+                    {
+                    "Name" = "8:mccrush.ru"
+                    "AlwaysCreate" = "11:FALSE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_CD712400A2914C0F90AE4D6E0D3CF5EA"
+                        "Folders"
+                        {
+                        }
+                    }
                 }
             }
             "{1525181F-901A-416C-8A58-119130FE478E}:_F4BA5CAEC25B4106B56D7F25566AE31B"
@@ -186,9 +247,9 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:Setup1"
+        "ProductName" = "8:PomoTime"
         "ProductCode" = "8:{A5A08FCB-6EE1-492A-A30E-8BCF63815241}"
-        "PackageCode" = "8:{741A6BC7-C102-4616-8E56-A07DEDFDEFCA}"
+        "PackageCode" = "8:{970C911C-BA75-4CA6-A886-8EBE2244BBB9}"
         "UpgradeCode" = "8:{89CF428E-1DA3-4322-953B-23D3DBCC64D3}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
@@ -198,13 +259,13 @@
         "ProductVersion" = "8:2.1.2"
         "Manufacturer" = "8:mccrush.ru"
         "ARPHELPTELEPHONE" = "8:"
-        "ARPHELPLINK" = "8:"
+        "ARPHELPLINK" = "8:http://mccrush.ru"
         "Title" = "8:Setup PomoTime"
         "Subject" = "8:"
         "ARPCONTACT" = "8:mccrush.ru"
         "Keywords" = "8:"
-        "ARPCOMMENTS" = "8:PomoTime"
-        "ARPURLINFOABOUT" = "8:mccrush.ru"
+        "ARPCOMMENTS" = "8:Pomodoro timer"
+        "ARPURLINFOABOUT" = "8:http://mccrush.ru"
         "ARPPRODUCTICON" = "8:"
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
@@ -308,6 +369,34 @@
         }
         "Shortcut"
         {
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_A6BB0B3B3D0B4B7A959E10A7985C111D"
+            {
+            "Name" = "8:PomoTime"
+            "Arguments" = "8:"
+            "Description" = "8:Pomodoro timer"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_92C2075893604EDB90EBEB78ACF6A472"
+            "Folder" = "8:_CE56B83007C4478D9829F9FEE1A47FCE"
+            "WorkingFolder" = "8:_568538EBB07141CC8BF224EC668B85A1"
+            "Icon" = "8:_E8AAC5D1EA604A3C8A851EB9A5BF7AEB"
+            "Feature" = "8:"
+            }
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_B285AD1D43834257BCD9AAEB0386239A"
+            {
+            "Name" = "8:PomoTime"
+            "Arguments" = "8:"
+            "Description" = "8:Pomodoro timer"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_92C2075893604EDB90EBEB78ACF6A472"
+            "Folder" = "8:_F4BA5CAEC25B4106B56D7F25566AE31B"
+            "WorkingFolder" = "8:_568538EBB07141CC8BF224EC668B85A1"
+            "Icon" = "8:_E8AAC5D1EA604A3C8A851EB9A5BF7AEB"
+            "Feature" = "8:"
+            }
         }
         "UserInterface"
         {
@@ -707,7 +796,7 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_9D513A275FA64502936A100519F221DD"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_92C2075893604EDB90EBEB78ACF6A472"
             {
             "SourcePath" = "8:..\\WindowsApp1\\obj\\Debug\\PomoTime.exe"
             "TargetName" = "8:"
